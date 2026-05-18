@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+/* Hide Scrollbar */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+ .heroSwiper {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .heroSwiper .swiper-slide {
+    height: auto;
+  }
+
+
+   /* ACTIVE CENTER CARD */
+
+  
+
+  /* PAGINATION */
+
+  .testimonialSwiper .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: #d4d4d8;
+    opacity: 1;
+    transition: 0.4s;
+  }
+
+  .testimonialSwiper .swiper-pagination-bullet-active {
+    width: 38px;
+    border-radius: 30px;
+    background: #1E3A2F;
+  }
