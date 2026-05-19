@@ -35,7 +35,7 @@ const products =
     "quantity": 12,
     "socialLinks": { "facebook": "#", "pinterest": "#", "instagram": "#" },
     "images": [
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600",
+      "../assets/images/chair_1-removebg-preview.png",
       "https://images.unsplash.com/photo-1540518614846-7eded433c457?w=600"
     ],
     "thumbnail": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=600"
@@ -75,14 +75,14 @@ const products =
     "quantity": 8,
     "socialLinks": { "facebook": "#", "instagram": "#" },
     "images": [
-      "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600",
+      "../assets/images/chair 3.png",
       "https://images.unsplash.com/photo-1484101403633-562f891dc89a?w=600"
     ],
     "thumbnail": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600"
   },
   {
     "id": 3,
-    "title": "Industrial Matte Black Office Desk",
+    "title": "Gaming Chair with RGB Lighting",
     "category": "Office",
     "brand": "IronWork",
     "sku": "DK-BK-MT03",
@@ -115,7 +115,7 @@ const products =
     "quantity": 15,
     "socialLinks": { "twitter": "#", "instagram": "#" },
     "images": [
-      "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600",
+      "../assets/images/gaming_chair-removebg-preview.png",
       "https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?w=600"
     ],
     "thumbnail": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600"

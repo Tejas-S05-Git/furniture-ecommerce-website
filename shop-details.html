@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- SWIPER CSS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS CSS -->
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+     
+
+     <!-- TOP BAR -->
+
+    <div
+      id="topBar"
+      class="bg-primary text-white hidden lg:block relative group transition-all duration-300"
+    >
+      <div
+        class="max-w-[1250px] mx-auto flex items-center justify-between py-4"
+      >
+        <div>
+          <p class="text-[18px]">Call Us : +123-456-789</p>
+        </div>
+
+        <div>
+          <p class="text-[18px]">
+            Sign up and GET 25% OFF for your first order.
+
+            <span class="text-accent underline font-semibold cursor-pointer">
+              Sign up now
+            </span>
+          </p>
+        </div>
+
+        <div class="flex items-center gap-4 text-accent text-[20px]">
+          <i class="ri-facebook-fill cursor-pointer"></i>
+          <i class="ri-twitter-fill cursor-pointer"></i>
+          <i class="ri-pinterest-fill cursor-pointer"></i>
+          <i class="ri-instagram-line cursor-pointer"></i>
+          <i class="ri-youtube-fill cursor-pointer"></i>
+        </div>
+      </div>
+
+      <!-- CLOSE BUTTON -->
+
+      <button
+        id="closeBtn"
+        class="absolute right-4 top-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 text-2xl text-white hover:text-accent"
+      >
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow-sm relative">
+      <div class="max-w-[1250px] mx-auto px-4">
+        <div class="h-[90px] flex items-center justify-between">
+          <!-- Logo -->
+          <div class="flex items-center gap-3">
+            <div
+              class="w-[45px] h-[45px] rounded-full bg-primary flex items-center justify-center"
+            >
+              <span class="text-accent text-2xl font-bold"> F </span>
+            </div>
+
+            <h1 class="text-2xl md:text-4xl font-bold text-zinc-800">
+              Furniture<span class="text-accent">.</span>
+            </h1>
+          </div>
+
+          <!-- Desktop Menu -->
+          <ul
+            class="hidden lg:flex items-center gap-10 text-[18px] font-medium text-zinc-800"
+          >
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./shop.html">Shop</a>
+            </li>
+
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./categories.html">Categories</a>
+            </li>
+
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./about.html">About Us</a>
+            </li>
+
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+
+            <li class="hover:text-primary duration-300 cursor-pointer">
+              <a href="./blog.html">Blog</a>
+            </li>
+          </ul>
+
+          <!-- Desktop Icons -->
+          <div
+            class="hidden md:flex items-center gap-5 text-[24px] text-zinc-800"
+          >
+            <i class="ri-search-line cursor-pointer hover:text-primary"></i>
+
+            <i class="ri-heart-line cursor-pointer hover:text-primary"></i>
+
+            <i
+              class="ri-shopping-cart-2-line cursor-pointer hover:text-primary"
+            ></i>
+
+            <i class="ri-user-3-line cursor-pointer hover:text-primary"></i>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <i
+            id="menuBtn"
+            class="ri-menu-3-line text-3xl cursor-pointer lg:hidden"
+          ></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MOBILE SIDEBAR -->
+
+    <div
+      id="sidebar"
+      class="fixed top-0 right-[-100%] w-[300px] h-screen bg-white shadow-2xl transition-all duration-500 ease-in-out z-50 p-6"
+    >
+      <!-- Top -->
+      <div class="flex items-center justify-between border-b pb-4">
+        <h1 class="text-3xl font-bold text-primary">Menu</h1>
+
+        <i id="closeBtn" class="ri-close-line text-4xl cursor-pointer"></i>
+      </div>
+
+      <!-- Menu -->
+      <ul
+        class="flex flex-col gap-8 mt-10 text-[20px] font-medium text-zinc-800"
+      >
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#home">Home</a>
+        </li>
+
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#shop">Shop</a>
+        </li>
+
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#categories">Categories</a>
+        </li>
+
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#about">About Us</a>
+        </li>
+
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#contact">Contact Us</a>
+        </li>
+
+        <li class="hover:text-primary cursor-pointer">
+          <a href="#blog">Blog</a>
+        </li>
+      </ul>
+
+      <!-- Icons -->
+      <div class="flex items-center gap-6 mt-12 text-[28px] text-primary">
+        <i class="ri-search-line cursor-pointer"></i>
+
+        <i class="ri-heart-line cursor-pointer"></i>
+
+        <i class="ri-shopping-cart-2-line cursor-pointer"></i>
+
+        <i class="ri-user-3-line cursor-pointer"></i>
+      </div>
+    </div>
+
+    <!-- OVERLAY -->
+
+    <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
+
+
+
+     <section
+      class="relative overflow-hidden bg-[#F5F5F5] py-14 md:py-16 lg:py-20"
+    >
+      <!-- LIGHT GRADIENT -->
+
+      <div
+        class="absolute inset-0 bg-gradient-to-b from-white/20 to-transparent"
+      ></div>
+
+      <!-- TOP SHAPE -->
+
+      <div
+        class="absolute top-0 right-0 w-[180px] h-[180px] rounded-full bg-[#ECECEC] blur-3xl opacity-70"
+      ></div>
+
+      <!-- BOTTOM SHAPE -->
+
+      <div
+        class="absolute bottom-0 left-0 w-[160px] h-[160px] rounded-full bg-[#ECECEC] blur-3xl opacity-70"
+      ></div>
+
+      <!-- CONTENT -->
+
+      <div class="relative z-10 max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12">
+        <div class="flex flex-col items-center justify-center text-center">
+          <!-- TITLE -->
+
+          <h1
+            class="text-[34px] sm:text-[42px] md:text-[52px] font-bold tracking-[-1px] text-zinc-900 leading-none"
+          >
+            Shop
+          </h1>
+
+          <!-- BREADCRUMB -->
+
+          <div class="flex items-center gap-3 mt-4">
+            <a
+              href="./index.html"
+              class="text-zinc-500 text-sm md:text-lg hover:text-zinc-900 duration-300"
+            >
+              Home
+            </a>
+             <span class="text-zinc-400 text-base md:text-lg"> / </span>
+            <a
+              href="./shop.html"
+              class="text-zinc-500 text-sm md:text-lg hover:text-zinc-900 duration-300"
+            >
+              Shop
+            </a>
+
+            <span class="text-zinc-400 text-base md:text-lg"> / </span>
+
+            <span class="text-zinc-900 font-medium text-sm md:text-lg">
+              Product Details
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- =========================
+PRODUCT DETAILS SECTION
+========================= -->
+
+<section
+  class="py-16 lg:py-24
+  bg-white"
+>
+  <div
+    class="max-w-[1300px]
+    mx-auto
+    px-4"
+  >
+
+    <div
+      class="grid
+      grid-cols-1
+      lg:grid-cols-2
+      gap-14
+      xl:gap-20
+      items-start"
+    >
+
+      <!-- =========================
+      LEFT IMAGE GALLERY
+      ========================= -->
+
+      <div>
+
+        <!-- MAIN IMAGE -->
+
+        <div
+  class="relative
+
+  bg-[#F7F7F7]
+
+  rounded-[32px]
+
+  overflow-hidden
+
+  h-[400px]
+  sm:h-[500px]
+  lg:h-[620px]
+
+  flex items-center
+  justify-center
+
+  p-8
+  sm:p-12"
+>
+
+  <!-- LEFT BUTTON -->
+
+  <button
+    class="absolute
+    left-4
+    sm:left-5
+    top-1/2
+    -translate-y-1/2
+
+    z-10
+
+    w-[55px]
+    h-[55px]
+
+    sm:w-[60px]
+    sm:h-[60px]
+
+    rounded-[18px]
+
+    bg-[#1F5B2B]
+    hover:bg-[#F6B428]
+
+    duration-300
+
+    flex items-center
+    justify-center
+
+    text-white
+    text-[28px]
+
+    shadow-lg"
+  >
+    <i class="ri-arrow-left-s-line"></i>
+  </button>
+
+  <!-- MAIN IMAGE -->
+
+  <div
+    class="w-full
+    h-full
+
+    flex items-center
+    justify-center"
+  >
+
+    <img
+      src="./assets/images/gaming_chair-removebg-preview.png"
+      alt="Gaming Chair"
+
+      class="max-w-full
+      max-h-full
+
+      w-auto
+      h-auto
+
+      object-contain
+
+      select-none
+
+      transition-all
+      duration-500
+
+      hover:scale-[1.03]"
+    />
+
+  </div>
+
+  <!-- RIGHT BUTTON -->
+
+  <button
+    class="absolute
+    right-4
+    sm:right-5
+    top-1/2
+    -translate-y-1/2
+
+    z-10
+
+    w-[55px]
+    h-[55px]
+
+    sm:w-[60px]
+    sm:h-[60px]
+
+    rounded-[18px]
+
+    bg-[#1F5B2B]
+    hover:bg-[#F6B428]
+
+    duration-300
+
+    flex items-center
+    justify-center
+
+    text-white
+    text-[28px]
+
+    shadow-lg"
+  >
+    <i class="ri-arrow-right-s-line"></i>
+  </button>
+
+</div>
+        <!-- THUMBNAILS -->
+
+       <div
+  class="flex
+  gap-4
+  mt-6"
+>
+
+  <!-- ITEM -->
+
+  <button
+    class="group
+
+    w-[110px]
+    h-[120px]
+
+    bg-[#F7F7F7]
+
+    rounded-[22px]
+
+    border-2
+    border-[#1F5B2B]
+
+    overflow-hidden
+
+    flex items-center
+    justify-center
+
+    relative
+
+    duration-300"
+  >
+
+    <img
+      src="./assets/images/gaming_chair-removebg-preview.png"
+      alt=""
+
+      class="w-[82px]
+      h-[82px]
+
+      object-contain
+
+      group-hover:scale-110
+
+      duration-300"
+    />
+
+  </button>
+
+  <!-- ITEM -->
+
+  <button
+    class="group
+
+    w-[110px]
+    h-[120px]
+
+    bg-[#F7F7F7]
+
+    rounded-[22px]
+
+    border-2
+    border-transparent
+
+    hover:border-[#1F5B2B]
+
+    overflow-hidden
+
+    flex items-center
+    justify-center
+
+    relative
+
+    duration-300"
+  >
+
+    <img
+      src="./assets/images/gaming_chair-removebg-preview.png"
+      alt=""
+
+      class="w-[82px]
+      h-[82px]
+
+      object-contain
+
+      group-hover:scale-110
+
+      duration-300"
+    />
+
+  </button>
+
+  <!-- ITEM -->
+
+  <button
+    class="group
+
+    w-[110px]
+    h-[120px]
+
+    bg-[#F7F7F7]
+
+    rounded-[22px]
+
+    border-2
+    border-transparent
+
+    hover:border-[#1F5B2B]
+
+    overflow-hidden
+
+    flex items-center
+    justify-center
+
+    relative
+
+    duration-300"
+  >
+
+    <img
+      src="./assets/images/gaming_chair-removebg-preview.png"
+      alt=""
+
+      class="w-[82px]
+      h-[82px]
+
+      object-contain
+
+      group-hover:scale-110
+
+      duration-300"
+    />
+
+  </button>
+
+  <!-- ITEM -->
+
+  <button
+    class="group
+
+    w-[110px]
+    h-[120px]
+
+    bg-[#F7F7F7]
+
+    rounded-[22px]
+
+    border-2
+    border-transparent
+
+    hover:border-[#1F5B2B]
+
+    overflow-hidden
+
+    flex items-center
+    justify-center
+
+    relative
+
+    duration-300"
+  >
+
+    <img
+      src="./assets/images/gaming_chair-removebg-preview.png"
+      alt=""
+
+      class="w-[82px]
+      h-[82px]
+
+      object-contain
+
+      group-hover:scale-110
+
+      duration-300"
+    />
+
+  </button>
+
+</div>
+      </div>
+
+      <!-- =========================
+      RIGHT CONTENT
+      ========================= -->
+
+      <div
+        class="pt-2"
+      >
+
+        <!-- CATEGORY -->
+
+        <p
+          class="text-zinc-500
+          text-lg"
+        >
+          Chair
+        </p>
+
+        <!-- TITLE -->
+
+        <div
+          class="flex items-center
+          gap-4
+          flex-wrap
+          mt-3"
+        >
+
+          <h1
+            class="text-3xl
+            sm:text-4xl
+            font-bold
+            text-zinc-900
+            leading-tight"
+          >
+            Red Gaming Chair
+          </h1>
+
+          <!-- STOCK -->
+
+          <span
+            class="px-4
+            py-1.5
+
+            rounded-full
+
+            border
+            border-[#6DD19C]
+
+            bg-[#EFFFF5]
+
+            text-[#2BAE66]
+            font-small"
+          >
+            In Stock
+          </span>
+
+        </div>
+
+        <!-- RATING -->
+
+        <div
+          class="flex items-center
+          gap-4
+          mt-6"
+        >
+
+          <div
+            class="flex items-center
+            gap-1
+            text-[#F6B428]
+            text-xl"
+          >
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+          </div>
+
+          <p
+            class="text-zinc-600
+            text-lg"
+          >
+            4.9 (245 Review)
+          </p>
+
+        </div>
+
+        <!-- PRICE -->
+
+        <div
+          class="flex items-center
+          gap-5
+          mt-7"
+        >
+
+          <span
+            class="text-4xl
+            font-bold
+            text-zinc-900"
+          >
+            $90.00
+          </span>
+
+          <span
+            class="text-2xl
+            text-zinc-400
+            line-through"
+          >
+            $100.00
+          </span>
+
+        </div>
+
+        <!-- DESCRIPTION -->
+
+        <p
+          class="mt-8
+
+          text-zinc-500
+          leading-[30px]
+          text-lg"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <!-- COLORS -->
+
+        <div
+          class="mt-10"
+        >
+
+          <p
+            class="text-xl
+            font-semibold
+            text-zinc-900"
+          >
+            Color :
+            <span
+              class="text-zinc-500
+              font-normal"
+            >
+              Black
+            </span>
+          </p>
+
+          <!-- COLOR BUTTONS -->
+
+          <div
+            class="flex items-center
+            gap-4
+            mt-5"
+          >
+
+            <button
+              class="w-9
+              h-9
+              rounded-full
+
+              bg-black
+
+              border-[3px]
+              border-white
+
+              outline
+              outline-2
+              outline-black"
+            ></button>
+
+            <button
+              class="w-9
+              h-9
+              rounded-full
+              bg-[#6E2C12]"
+            ></button>
+
+            <button
+              class="w-9
+              h-9
+              rounded-full
+              bg-[#ECECEC]"
+            ></button>
+
+            <button
+              class="w-9
+              h-9
+              rounded-full
+              bg-[#009966]"
+            ></button>
+
+            <button
+              class="w-9
+              h-9
+              rounded-full
+              bg-[#0A89C9]"
+            ></button>
+
+          </div>
+
+        </div>
+
+        <!-- ACTIONS -->
+
+        <div
+          class="flex items-center
+          gap-5
+          flex-wrap
+
+          mt-12"
+        >
+
+          <!-- QUANTITY -->
+
+          <div
+            class="flex items-center
+
+            border
+            border-zinc-200
+
+            rounded-full
+            overflow-hidden"
+          >
+
+            <button
+              class="w-[50px]
+              h-[50px]
+
+              text-2xl
+              text-zinc-600
+
+              hover:bg-zinc-100
+
+              duration-300"
+            >
+              -
+            </button>
+
+            <span
+              class="w-[50px]
+              text-center
+
+              text-sm
+              font-medium"
+            >
+              4
+            </span>
+
+            <button
+              class="w-[50px]
+              h-[50px]
+
+              text-2xl
+              text-zinc-600
+
+              hover:bg-zinc-100
+
+              duration-300"
+            >
+              +
+            </button>
+
+          </div>
+
+          <!-- ADD TO CART -->
+
+          <button
+            class="h-[50px]
+
+            px-10
+
+            rounded-full
+
+            bg-primary
+            hover:bg-accent
+
+            duration-300
+
+            text-white
+            text-sm
+            font-semibold"
+          >
+            Add To Cart
+          </button>
+
+          <!-- BUY NOW -->
+
+          <button
+            class="h-[50px]
+
+            px-10
+
+            rounded-full
+
+            bg-accent
+            hover:bg-primary
+
+            duration-300
+
+            text-black
+            text-sm
+            font-semibold"
+          >
+            Buy Now
+          </button>
+
+          <!-- HEART -->
+
+          <button
+            class="w-[50px]
+            h-[50px]
+
+            rounded-full
+
+            border
+            border-zinc-200
+
+            hover:bg-[#1F5B2B]
+            hover:text-white
+
+            duration-300
+
+            flex items-center
+            justify-center
+
+            text-xl
+            text-zinc-700"
+          >
+            <i class="ri-heart-line"></i>
+          </button>
+
+        </div>
+
+        <!-- PRODUCT INFO -->
+
+        <div
+          class="border-t
+          border-zinc-200
+
+          mt-10
+          pt-8"
+        >
+
+          <!-- SKU -->
+
+          <div
+            class="flex
+            gap-2
+            flex-wrap"
+          >
+
+            <span
+              class="font-semibold
+              text-xl"
+            >
+              SKU :
+            </span>
+
+            <span
+              class="text-zinc-500
+              text-xl"
+            >
+              FRNC87654ABC
+            </span>
+
+          </div>
+
+          <!-- TAGS -->
+
+          <div
+            class="flex
+            gap-2
+            flex-wrap
+
+            mt-4"
+          >
+
+            <span
+              class="font-semibold
+              text-xl"
+            >
+              Tags :
+            </span>
+
+            <span
+              class="text-zinc-500
+              text-xl"
+            >
+              Furniture, Office, Gaming Chair, Chair
+            </span>
+
+          </div>
+
+          <!-- SHARE -->
+
+          <div
+            class="flex items-center
+            gap-4
+            flex-wrap
+
+            mt-5"
+          >
+
+            <span
+              class="font-semibold
+              text-xl"
+            >
+              Share :
+            </span>
+
+            <div
+              class="flex items-center
+              gap-3"
+            >
+
+              <button
+                class="w-10
+                h-10
+
+                rounded-full
+
+                bg-primary
+                hover:bg-accent
+
+                duration-300
+
+                flex items-center
+                justify-center
+
+                text-white"
+              >
+                <i class="ri-facebook-fill"></i>
+              </button>
+
+              <button
+                class="w-10
+                h-10
+
+                rounded-full
+
+                bg-[#1F5B2B]
+                hover:bg-[#F6B428]
+
+                duration-300
+
+                flex items-center
+                justify-center
+
+                text-white"
+              >
+                <i class="ri-twitter-fill"></i>
+              </button>
+
+              <button
+                class="w-10
+                h-10
+
+                rounded-full
+
+                bg-[#1F5B2B]
+                hover:bg-[#F6B428]
+
+                duration-300
+
+                flex items-center
+                justify-center
+
+                text-white"
+              >
+                <i class="ri-pinterest-fill"></i>
+              </button>
+
+              <button
+                class="w-10
+                h-10
+
+                rounded-full
+
+                bg-[#1F5B2B]
+                hover:bg-[#F6B428]
+
+                duration-300
+
+                flex items-center
+                justify-center
+
+                text-white"
+              >
+                <i class="ri-instagram-line"></i>
+              </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+PRODUCT TABS SECTION
+========================= -->
+
+<section
+  class="py-20
+  lg:py-28"
+>
+
+  <div
+    class="max-w-[1300px]
+    mx-auto
+    px-4"
+  >
+
+    <!-- =========================
+    TAB BUTTONS
+    ========================= -->
+
+    <div
+      class="border-b
+      border-zinc-200"
+    >
+
+      <div
+        class="flex items-center
+        justify-center
+
+        gap-5
+        sm:gap-10
+        lg:gap-20
+
+        overflow-x-auto"
+      >
+
+        <!-- DESCRIPTION -->
+
+        <button
+          data-tab="description"
+
+          class="tabBtn
+
+          relative
+
+          text-[18px]
+          sm:text-[26px]
+          lg:text-[32px]
+
+          font-bold
+
+          text-[#1F5B2B]
+
+          pb-6
+
+          whitespace-nowrap"
+        >
+
+          Description
+
+          <span
+            class="absolute
+            left-0
+            bottom-0
+
+            w-full
+            h-[4px]
+
+            rounded-full
+
+            bg-[#1F5B2B]"
+          ></span>
+
+        </button>
+
+        <!-- ADDITIONAL -->
+
+        <button
+          data-tab="additional"
+
+          class="tabBtn
+
+          relative
+
+          text-[18px]
+          sm:text-[26px]
+          lg:text-[32px]
+
+          font-bold
+
+          text-zinc-400
+
+          hover:text-[#1F5B2B]
+
+          duration-300
+
+          pb-6
+
+          whitespace-nowrap"
+        >
+          Additional Information
+        </button>
+
+        <!-- REVIEW -->
+
+        <button
+          data-tab="review"
+
+          class="tabBtn
+
+          relative
+
+          text-[18px]
+          sm:text-[26px]
+          lg:text-[32px]
+
+          font-bold
+
+          text-zinc-400
+
+          hover:text-[#1F5B2B]
+
+          duration-300
+
+          pb-6
+
+          whitespace-nowrap"
+        >
+          Review
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- =========================
+    TAB CONTENT WRAPPER
+    ========================= -->
+
+    <div
+      class="mt-16"
+    >
+
+      <!-- ===================================================== -->
+      <!-- DESCRIPTION TAB -->
+      <!-- ===================================================== -->
+
+      <div
+        id="descriptionTab"
+        class="tabContent"
+      >
+
+        <div
+          class="space-y-5"
+        >
+
+          <p
+            class="text-zinc-600
+
+            text-lg
+            lg:text-[20px]
+
+            leading-[38px]"
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+
+          <p
+            class="text-zinc-600
+
+            text-lg
+            lg:text-[20px]
+
+            leading-[42px]"
+          >
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+
+          <!-- FEATURES -->
+
+          <div
+            class="space-y-3"
+          >
+
+            <!-- ITEM -->
+
+            <div
+              class="flex items-start
+              gap-4"
+            >
+
+              <div
+                class="relative
+                mt-1"
+              >
+
+                <div
+                  class="w-8
+                  h-8
+
+                  rounded-full
+
+                  bg-[#1F5B2B]"
+                ></div>
+
+                <div
+                  class="absolute
+                  left-[-2px]
+                  top-1/2
+                  -translate-y-1/2
+
+                  w-5
+                  h-5
+
+                  rounded-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+              <p
+                class="text-zinc-700
+
+                text-lg
+                lg:text-[22px]
+
+                leading-[38px]"
+              >
+                100% Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div
+              class="flex items-start
+              gap-5"
+            >
+
+              <div
+                class="relative
+                mt-1"
+              >
+
+                <div
+                  class="w-8
+                  h-8
+
+                  rounded-full
+
+                  bg-[#1F5B2B]"
+                ></div>
+
+                <div
+                  class="absolute
+                  left-[-2px]
+                  top-1/2
+                  -translate-y-1/2
+
+                  w-5
+                  h-5
+
+                  rounded-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+              <p
+                class="text-zinc-700
+
+                text-lg
+                lg:text-[22px]
+
+                leading-[38px]"
+              >
+                Ut at nunc vel nisi gravida dictum.
+              </p>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div
+              class="flex items-start
+              gap-5"
+            >
+
+              <div
+                class="relative
+                mt-1"
+              >
+
+                <div
+                  class="w-8
+                  h-8
+
+                  rounded-full
+
+                  bg-[#1F5B2B]"
+                ></div>
+
+                <div
+                  class="absolute
+                  left-[-2px]
+                  top-1/2
+                  -translate-y-1/2
+
+                  w-5
+                  h-5
+
+                  rounded-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+              <p
+                class="text-zinc-700
+
+                text-lg
+                lg:text-[22px]
+
+                leading-[38px]"
+              >
+                Donec non velit sed risus tincidunt suscipit.
+              </p>
+
+            </div>
+
+            <!-- ITEM -->
+
+            <div
+              class="flex items-start
+              gap-5"
+            >
+
+              <div
+                class="relative
+                mt-1"
+              >
+
+                <div
+                  class="w-8
+                  h-8
+
+                  rounded-full
+
+                  bg-[#1F5B2B]"
+                ></div>
+
+                <div
+                  class="absolute
+                  left-[-2px]
+                  top-1/2
+                  -translate-y-1/2
+
+                  w-5
+                  h-5
+
+                  rounded-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+              <p
+                class="text-zinc-700
+
+                text-lg
+                lg:text-[22px]
+
+                leading-[38px]"
+              >
+                Cras laoreet lacus in dui posuere fringilla.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- ===================================================== -->
+      <!-- ADDITIONAL INFORMATION -->
+      <!-- ===================================================== -->
+
+      <div
+        id="additionalTab"
+        class="tabContent hidden"
+      >
+
+        <div
+          class="overflow-hidden
+
+          rounded-[30px]
+
+          border
+          border-zinc-200"
+        >
+
+          <table
+            class="w-full"
+          >
+
+            <thead
+              class="bg-accent"
+            >
+
+              <tr>
+
+                <th
+                  class="text-left
+
+                  py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[22px]
+
+                  font-bold
+
+                  text-zinc-900"
+                >
+                  Feature
+                </th>
+
+                <th
+                  class="text-left
+
+                  py-6
+                  px-6
+                  lg:px-8
+
+                  text-lg
+                  lg:text-[22px]
+
+                  font-bold
+
+                  text-zinc-900"
+                >
+                  Description
+                </th>
+
+              </tr>
+
+            </thead>
+
+            <tbody>
+
+              <tr
+                class="bg-[#F7F7F7]"
+              >
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Seat Material
+                </td>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Leather
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Color
+                </td>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Black, Brown, Grey, Green, Blue
+                </td>
+
+              </tr>
+
+              <tr
+                class="bg-[#F7F7F7]"
+              >
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Item Weight
+                </td>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                 text-sm
+                  lg:text-[20px]
+                  text-zinc-700"
+                >
+                  25 Kilograms
+                </td>
+
+              </tr>
+
+              <tr>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                 text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Dimensions
+                </td>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                  text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  21"D x 21"W x 48"H
+                </td>
+
+              </tr>
+
+              <tr
+                class="bg-[#F7F7F7]"
+              >
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                 text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  Brand
+                </td>
+
+                <td
+                  class="py-6
+                  px-6
+                  lg:px-8
+
+                 text-sm
+                  lg:text-[20px]
+
+                  text-zinc-700"
+                >
+                  KD Design
+                </td>
+
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+
+      <!-- ===================================================== -->
+      <!-- REVIEW TAB -->
+      <!-- ===================================================== -->
+
+      <div
+        id="reviewTab"
+        class="tabContent hidden"
+      >
+
+        <div
+          class="grid
+          grid-cols-1
+          xl:grid-cols-[280px_1fr]
+
+          gap-14
+
+          pb-14
+
+          border-b
+          border-zinc-200"
+        >
+
+          <!-- LEFT -->
+
+          <div
+            class="flex flex-col
+            items-center
+            justify-center
+
+            xl:border-r
+            border-zinc-200"
+          >
+
+            <h2
+              class="text-6xl
+              font-bold"
+            >
+              4.9
+            </h2>
+
+            <p
+              class="mt-2
+              text-zinc-500"
+            >
+              out of 5
+            </p>
+
+            <div
+              class="flex
+              gap-1
+
+              text-[#F6B428]
+
+              text-2xl
+
+              mt-3"
+            >
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+
+            <p
+              class="mt-3
+              text-zinc-500"
+            >
+              (245 Review)
+            </p>
+
+          </div>
+
+          <!-- RIGHT -->
+
+          <div
+            class="space-y-5"
+          >
+
+            <!-- BAR -->
+
+            <div
+              class="flex items-center
+              gap-5"
+            >
+
+              <span
+                class="w-[70px]
+                text-zinc-600"
+              >
+                5 Star
+              </span>
+
+              <div
+                class="flex-1
+                h-[8px]
+
+                rounded-full
+
+                bg-zinc-200
+
+                overflow-hidden"
+              >
+
+                <div
+                  class="w-[80%]
+                  h-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+            </div>
+
+            <!-- BAR -->
+
+            <div
+              class="flex items-center
+              gap-5"
+            >
+
+              <span
+                class="w-[70px]
+                text-zinc-600"
+              >
+                4 Star
+              </span>
+
+              <div
+                class="flex-1
+                h-[8px]
+
+                rounded-full
+
+                bg-zinc-200
+
+                overflow-hidden"
+              >
+
+                <div
+                  class="w-[40%]
+                  h-full
+
+                  bg-[#F6B428]"
+                ></div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+RELATED PRODUCTS
+========================================= -->
+
+<section
+  class="py-20
+  lg:py-28"
+>
+
+  <div
+    class="max-w-[1400px]
+    mx-auto
+    px-4"
+  >
+
+    <!-- TOP TITLE -->
+
+    <div
+      class="text-center"
+    >
+
+      <div
+        class="flex items-center
+        justify-center
+        gap-3"
+      >
+
+        <span
+          class="w-5
+          h-[2px]
+
+          bg-[#F6B428]"
+        ></span>
+
+        <p
+          class="text-zinc-600
+
+          text-xl"
+        >
+          Related Products
+        </p>
+
+      </div>
+
+
+
+      <h2
+        class="mt-5
+
+        text-3xl
+        sm:text-4xl
+        lg:text-5xl
+
+        font-bold
+
+        leading-tight
+
+        text-[#222222]"
+      >
+        Explore
+        <span class="text-[#1F5B2B]">
+          Related Products
+        </span>
+      </h2>
+
+    </div>
+
+
+
+    <!-- PRODUCTS GRID -->
+
+   <div
+  id="relatedProductsContainer"
+
+  class="flex
+  gap-7
+
+  overflow-x-auto
+
+  scroll-smooth
+
+  pb-4
+  mt-16
+
+  no-scrollbar"
+></div>
+
+  </div>
+
+</section>
+
+
+  <!-- =========================
+FEATURES SECTION
+========================= -->
+
+    <section class="bg-white py-10 md:py-12">
+      <div class="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12">
+        <!-- GRID -->
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
+        >
+          <!-- =========================
+      ITEM
+      ========================= -->
+
+          <div class="flex items-start gap-4">
+            <!-- ICON -->
+
+            <div
+              class="w-[58px] h-[58px] rounded-full bg-[#F4B740] flex items-center justify-center shrink-0 relative"
+            >
+              <!-- OUTLINE -->
+
+              <div
+                class="absolute inset-0 rounded-full border-[2px] border-[#1D5A2B] -translate-x-[4px] -translate-y-[4px]"
+              ></div>
+
+              <i
+                class="ri-box-3-line text-[28px] text-[#1D5A2B] relative z-10"
+              ></i>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div>
+              <h3
+                class="text-[22px] md:text-[26px] leading-none font-semibold text-[#222222]"
+              >
+                Free Shipping
+              </h3>
+
+              <p
+                class="mt-3 text-[15px] md:text-[17px] leading-[28px] text-[#555555]"
+              >
+                Free shipping for order above $180
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================
+      ITEM
+      ========================= -->
+
+          <div class="flex items-start gap-4">
+            <!-- ICON -->
+
+            <div
+              class="w-[58px] h-[58px] rounded-full bg-[#F4B740] flex items-center justify-center shrink-0 relative"
+            >
+              <!-- OUTLINE -->
+
+              <div
+                class="absolute inset-0 rounded-full border-[2px] border-[#1D5A2B] -translate-x-[4px] -translate-y-[4px]"
+              ></div>
+
+              <i
+                class="ri-wallet-3-line text-[28px] text-[#1D5A2B] relative z-10"
+              ></i>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div>
+              <h3
+                class="text-[22px] md:text-[26px] leading-none font-semibold text-[#222222]"
+              >
+                Flexible Payment
+              </h3>
+
+              <p
+                class="mt-3 text-[15px] md:text-[17px] leading-[28px] text-[#555555]"
+              >
+                Multiple secure payment options
+              </p>
+            </div>
+          </div>
+
+          <!-- =========================
+      ITEM
+      ========================= -->
+
+          <div class="flex items-start gap-4">
+            <!-- ICON -->
+
+            <div
+              class="w-[58px] h-[58px] rounded-full bg-[#F4B740] flex items-center justify-center shrink-0 relative"
+            >
+              <!-- OUTLINE -->
+
+              <div
+                class="absolute inset-0 rounded-full border-[2px] border-[#1D5A2B] -translate-x-[4px] -translate-y-[4px]"
+              ></div>
+
+              <i
+                class="ri-customer-service-2-line text-[28px] text-[#1D5A2B] relative z-10"
+              ></i>
+            </div>
+
+            <!-- CONTENT -->
+
+            <div>
+              <h3
+                class="text-[22px] md:text-[26px] leading-none font-semibold text-[#222222]"
+              >
+                24×7 Support
+              </h3>
+
+              <p
+                class="mt-3 text-[15px] md:text-[17px] leading-[28px] text-[#555555]"
+              >
+                We support online all days.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+  
+<!-- FOOTER -->
+
+    <footer class="bg-primary overflow-hidden relative">
+      <!-- FLOATING GRADIENTS -->
+
+      <div
+        class="absolute top-0 left-0 w-[300px] h-[300px] bg-white/5 blur-3xl rounded-full"
+      ></div>
+
+      <div
+        class="absolute bottom-0 right-0 w-[300px] h-[300px] bg-accent/20 blur-3xl rounded-full"
+      ></div>
+
+      <!-- TOP FOOTER -->
+
+      <div
+        class="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12 py-14 md:py-16 relative z-10"
+      >
+        <!-- GRID -->
+
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1fr_1fr] gap-12 lg:gap-10"
+        >
+          <!-- =========================
+      LOGO CONTENT
+      ========================= -->
+
+          <div data-aos="fade-up">
+            <!-- LOGO -->
+
+            <div class="flex items-center gap-4">
+              <!-- ICON -->
+
+              <div
+                class="w-[56px] h-[56px] rounded-full bg-accent flex items-center justify-center hover:scale-110 hover:rotate-6 duration-300"
+              >
+                <span class="text-primary text-4xl font-bold"> F </span>
+              </div>
+
+              <!-- TEXT -->
+
+              <h2 class="text-4xl font-bold text-white">
+                Furniture
+
+                <span class="text-accent"> . </span>
+              </h2>
+            </div>
+
+            <!-- DESCRIPTION -->
+
+            <p
+              class="text-white/80 text-base md:text-lg leading-relaxed mt-6 max-w-[420px]"
+            >
+              Premium luxury furniture crafted for modern interiors and elegant
+              living spaces.
+            </p>
+
+            <!-- SOCIAL ICONS -->
+
+            <div class="flex items-center gap-4 mt-10">
+              <!-- FACEBOOK -->
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-accent hover:-translate-y-2 hover:scale-110 hover:shadow-xl duration-300 flex items-center justify-center group"
+              >
+                <i
+                  class="ri-facebook-fill text-white group-hover:text-primary text-2xl"
+                ></i>
+              </a>
+
+              <!-- TWITTER -->
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-accent hover:-translate-y-2 hover:scale-110 hover:shadow-xl duration-300 flex items-center justify-center group"
+              >
+                <i
+                  class="ri-twitter-fill text-white group-hover:text-primary text-2xl"
+                ></i>
+              </a>
+
+              <!-- PINTEREST -->
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-accent hover:-translate-y-2 hover:scale-110 hover:shadow-xl duration-300 flex items-center justify-center group"
+              >
+                <i
+                  class="ri-pinterest-fill text-white group-hover:text-primary text-2xl"
+                ></i>
+              </a>
+
+              <!-- INSTAGRAM -->
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-accent hover:-translate-y-2 hover:scale-110 hover:shadow-xl duration-300 flex items-center justify-center group"
+              >
+                <i
+                  class="ri-instagram-line text-white group-hover:text-primary text-2xl"
+                ></i>
+              </a>
+
+              <!-- YOUTUBE -->
+
+              <a
+                href="#"
+                class="w-12 h-12 rounded-full bg-white/10 backdrop-blur-md border border-white/10 hover:bg-accent hover:-translate-y-2 hover:scale-110 hover:shadow-xl duration-300 flex items-center justify-center group"
+              >
+                <i
+                  class="ri-youtube-fill text-white group-hover:text-primary text-2xl"
+                ></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- =========================
+      COMPANY
+      ========================= -->
+
+          <div class="footerAccordion" data-aos="fade-up" data-aos-delay="100">
+            <!-- TOP -->
+
+            <button
+              class="footerAccordionBtn w-full flex items-center justify-between lg:pointer-events-none"
+            >
+              <h3 class="text-white text-2xl font-semibold">Company</h3>
+
+              <i
+                class="ri-arrow-down-s-line text-white text-3xl lg:hidden duration-300"
+              ></i>
+            </button>
+
+            <!-- CONTENT -->
+
+            <div
+              class="footerAccordionContent overflow-hidden max-h-0 lg:max-h-[500px] duration-500"
+            >
+              <ul class="space-y-5 mt-8">
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    About Us
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    Blog
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    Career
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- =========================
+      CUSTOMER SERVICES
+      ========================= -->
+
+          <div class="footerAccordion" data-aos="fade-up" data-aos-delay="200">
+            <!-- TOP -->
+
+            <button
+              class="footerAccordionBtn w-full flex items-center justify-between lg:pointer-events-none"
+            >
+              <h3 class="text-white text-2xl font-semibold">
+                Customer Services
+              </h3>
+
+              <i
+                class="ri-arrow-down-s-line text-white text-3xl lg:hidden duration-300"
+              ></i>
+            </button>
+
+            <!-- CONTENT -->
+
+            <div
+              class="footerAccordionContent overflow-hidden max-h-0 lg:max-h-[500px] duration-500"
+            >
+              <ul class="space-y-5 mt-8">
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    My Account
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    Track Order
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    Return
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                  >
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- =========================
+      INFORMATION
+      ========================= -->
+
+          <div data-aos="fade-up" data-aos-delay="300">
+            <h3 class="text-white text-2xl font-semibold">Information</h3>
+
+            <ul class="space-y-5 mt-8">
+              <li>
+                <a
+                  href="#"
+                  class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                >
+                  Privacy
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                >
+                  Terms & Condition
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="footerLink text-white/80 hover:text-accent hover:translate-x-2 duration-300 text-base md:text-lg inline-block"
+                >
+                  Return Policy
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- =========================
+      CONTACT
+      ========================= -->
+
+          <div data-aos="fade-up" data-aos-delay="400">
+            <h3 class="text-white text-2xl font-semibold">Contact Info</h3>
+
+            <ul class="space-y-6 mt-8">
+              <!-- PHONE -->
+
+              <li class="flex items-start gap-4">
+                <i class="ri-phone-line text-accent text-2xl"></i>
+
+                <span class="text-white/80 text-base md:text-lg">
+                  +0123-456-789
+                </span>
+              </li>
+
+              <!-- EMAIL -->
+
+              <li class="flex items-start gap-4">
+                <i class="ri-mail-line text-accent text-2xl"></i>
+
+                <span class="text-white/80 text-base md:text-lg break-all">
+                  example@gmail.com
+                </span>
+              </li>
+
+              <!-- ADDRESS -->
+
+              <li class="flex items-start gap-4">
+                <i class="ri-map-pin-line text-accent text-2xl"></i>
+
+                <span
+                  class="text-white/80 text-base md:text-lg leading-relaxed"
+                >
+                  8502 Preston Rd. Inglewood, Maine 98380
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================
+BOTTOM BAR
+========================= -->
+
+      <div class="bg-accent border-t border-black/10">
+        <div
+          class="max-w-[1400px] mx-auto px-4 md:px-8 lg:px-12 py-5 flex flex-col md:flex-row items-center justify-between gap-5"
+        >
+          <!-- COPYRIGHT -->
+
+          <p
+            class="text-zinc-900 text-sm sm:text-base md:text-lg font-medium text-center md:text-left"
+          >
+            Copyright ©
+
+            <span id="footerYear"></span>
+
+            Furniture. All Rights Reserved.
+          </p>
+
+          <!-- LANGUAGE + CURRENCY -->
+
+          <div class="flex items-center gap-5 text-zinc-900">
+            <!-- LANGUAGE -->
+
+            <select
+              class="bg-transparent outline-none text-sm md:text-base font-medium cursor-pointer"
+            >
+              <option class="text-black">English</option>
+
+              <option class="text-black">Hindi</option>
+
+              <option class="text-black">Marathi</option>
+            </select>
+
+            <!-- DIVIDER -->
+
+            <div class="w-[1px] h-6 bg-black/20"></div>
+
+            <!-- CURRENCY -->
+
+            <select
+              class="bg-transparent outline-none text-sm md:text-base font-medium cursor-pointer"
+            >
+              <option class="text-black">USD</option>
+
+              <option class="text-black">INR</option>
+
+              <option class="text-black">EUR</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================
+  BACK TO TOP BUTTON
+  ========================= -->
+
+      <button
+        id="backToTop"
+        class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-accent text-primary text-3xl shadow-2xl flex items-center justify-center hover:scale-110 hover:-translate-y-1 duration-300 opacity-0 invisible z-[999]"
+      >
+        <i class="ri-arrow-up-line"></i>
+      </button>
+    </footer>
+
+     <script src="./js/products.js"></script>
+
+    <script src="./js/shop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+
+        once: true,
+
+        offset: 100,
+      });
+    </script>
+    <script src="./js/shop-details.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/mainColor.js"></script>
+</body>
+</html>

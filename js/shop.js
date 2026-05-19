@@ -136,7 +136,10 @@ const paginatedProducts =
       productsContainer.innerHTML += `
 
         <!-- PRODUCT CARD -->
-
+       <a
+  href="../shop-details.html"
+  class="group block"
+>
         <div
           class="group"
 
@@ -381,6 +384,7 @@ const paginatedProducts =
           </div>
 
         </div>
+        </a>
 
       `;
     }
