@@ -88,7 +88,7 @@ products.forEach((product) => {
   <!-- PRODUCT CARD -->
 
   <a
-    href="../shop-details.html"
+    href="../shop-details.html?id=${product.id}"
 
     class="group
     block min-w-[300px]
@@ -409,3 +409,468 @@ products.forEach((product) => {
   `;
 
 });
+
+
+
+
+const params =
+  new URLSearchParams(
+    window.location.search
+  );
+
+const productId =
+  params.get("id");
+
+
+  const singleProduct =
+  products.find(
+    (product) =>
+      product.id == productId
+  );
+
+console.log(singleProduct);
+
+
+
+const productCategory =
+  document.getElementById(
+    "productCategory"
+  );
+
+const productTitle =
+  document.getElementById(
+    "productTitle"
+  );
+
+const productPrice =
+  document.getElementById(
+    "productPrice"
+  );
+
+const productOldPrice =
+  document.getElementById(
+    "productOldPrice"
+  );
+
+const productDescription =
+  document.getElementById(
+    "productDescription"
+  );
+
+const mainProductImage =
+  document.getElementById(
+    "mainProductImage"
+  );
+
+const productRating =
+  document.getElementById(
+    "productRating"
+  );
+
+const productSku =
+  document.getElementById(
+    "productSku"
+  );
+
+const productTags =
+  document.getElementById(
+    "productTags"
+  );
+
+const thumbnailContainer =
+  document.getElementById(
+    "thumbnailContainer"
+  );
+
+
+  productCategory.innerText =
+  singleProduct.category;
+
+productTitle.innerText =
+  singleProduct.title;
+
+productPrice.innerText =
+  `$${singleProduct.price}.00`;
+
+productOldPrice.innerText =
+  `$${singleProduct.oldPrice}.00`;
+
+productDescription.innerText =
+  singleProduct.description;
+
+mainProductImage.src =
+  singleProduct.images[0];
+
+productRating.innerText =
+  `${singleProduct.rating} (${singleProduct.totalReviews} Review)`;
+
+productSku.innerText =
+  singleProduct.sku;
+
+productTags.innerText =
+  singleProduct.tags.join(", ");
+
+
+
+ singleProduct.images.forEach(
+  (image, index) => {
+
+    thumbnailContainer.innerHTML += `
+
+      <button
+        data-image="${image}"
+
+        class="thumbnailBtn
+
+        group
+
+        w-[110px]
+        h-[120px]
+
+        bg-[#F7F7F7]
+
+        rounded-[22px]
+
+        border-2
+
+        ${
+          index === 0
+            ? "border-[#1F5B2B]"
+            : "border-transparent"
+        }
+
+        hover:border-[#1F5B2B]
+
+        overflow-hidden
+
+        flex items-center
+        justify-center
+
+        duration-300"
+      >
+
+        <img
+          src="${image}"
+
+          class="w-[82px]
+          h-[82px]
+
+          object-contain
+
+          group-hover:scale-110
+
+          duration-300"
+        />
+
+      </button>
+
+    `;
+
+  }
+); 
+
+
+const thumbnailBtns =
+  document.querySelectorAll(
+    ".thumbnailBtn"
+  );
+
+thumbnailBtns.forEach((button) => {
+
+  button.addEventListener(
+    "click",
+
+    () => {
+
+      const image =
+        button.dataset.image;
+
+      mainProductImage.src =
+        image;
+
+      thumbnailBtns.forEach((btn) => {
+
+        btn.classList.remove(
+          "border-[#1F5B2B]"
+        );
+
+        btn.classList.add(
+          "border-transparent"
+        );
+
+      });
+
+      button.classList.remove(
+        "border-transparent"
+      );
+
+      button.classList.add(
+        "border-[#1F5B2B]"
+      );
+
+    }
+  );
+
+});
+
+
+const prevBtn =
+  document.getElementById(
+    "prevBtn"
+  );
+
+const nextBtn =
+  document.getElementById(
+    "nextBtn"
+  );
+
+let currentImageIndex = 0;
+
+
+nextBtn.addEventListener(
+  "click",
+
+  () => {
+
+    currentImageIndex++;
+
+    if (
+      currentImageIndex >=
+      singleProduct.images.length
+    ) {
+
+      currentImageIndex = 0;
+
+    }
+
+    mainProductImage.src =
+      singleProduct.images[
+        currentImageIndex
+      ];
+
+  }
+);
+
+
+
+prevBtn.addEventListener(
+  "click",
+
+  () => {
+
+    currentImageIndex--;
+
+    if (currentImageIndex < 0) {
+
+      currentImageIndex =
+        singleProduct.images.length - 1;
+
+    }
+
+    mainProductImage.src =
+      singleProduct.images[
+        currentImageIndex
+      ];
+
+  }
+);
+
+
+const minusBtn =
+  document.getElementById(
+    "minusBtn"
+  );
+
+const plusBtn =
+  document.getElementById(
+    "plusBtn"
+  );
+
+const quantityCount =
+  document.getElementById(
+    "quantityCount"
+  );
+
+  
+
+let quantity = 1;
+
+quantityCount.innerText =
+  quantity;
+
+
+  plusBtn.addEventListener(
+  "click",
+
+  () => {
+
+    quantity++;
+
+    quantityCount.innerText =
+      quantity;
+
+  }
+);
+
+
+minusBtn.addEventListener(
+  "click",
+
+  () => {
+
+    if (quantity > 1) {
+
+      quantity--;
+
+      quantityCount.innerText =
+        quantity;
+
+    }
+
+  }
+);
+
+
+const dynamicDescription =
+  document.getElementById(
+    "dynamicDescription"
+  );
+
+dynamicDescription.innerText =
+  singleProduct.description;
+
+
+
+  const featuresContainer =
+  document.getElementById(
+    "featuresContainer"
+  );
+
+
+
+  singleProduct.features.forEach(
+  (feature) => {
+
+    featuresContainer.innerHTML += `
+
+      <div
+        class="flex items-start
+        gap-5"
+      >
+
+        <div
+          class="relative
+          mt-1"
+        >
+
+          <div
+            class="w-8
+            h-8
+
+            rounded-full
+
+            bg-[#1F5B2B]"
+          ></div>
+
+          <div
+            class="absolute
+            left-[-2px]
+            top-1/2
+            -translate-y-1/2
+
+            w-5
+            h-5
+
+            rounded-full
+
+            bg-[#F6B428]"
+          ></div>
+
+        </div>
+
+        <p
+          class="text-zinc-700
+
+          text-lg
+          lg:text-[22px]
+
+          leading-[38px]"
+        >
+          ${feature}
+        </p>
+
+      </div>
+
+    `;
+
+  }
+);
+
+
+const additionalInfoContainer =
+  document.getElementById(
+    "additionalInfoContainer"
+  );
+
+
+  Object.entries(
+  singleProduct.additionalInformation
+).forEach(([key, value], index) => {
+
+  additionalInfoContainer.innerHTML += `
+
+    <tr
+      class="${
+        index % 2 === 0
+          ? "bg-[#F7F7F7]"
+          : ""
+      }"
+    >
+
+      <td
+        class="py-6
+        px-6
+        lg:px-8
+
+        text-sm
+        lg:text-[20px]
+
+        text-zinc-700"
+      >
+        ${key}
+      </td>
+
+      <td
+        class="py-6
+        px-6
+        lg:px-8
+
+        text-sm
+        lg:text-[20px]
+
+        text-zinc-700"
+      >
+        ${value}
+      </td>
+
+    </tr>
+
+  `;
+
+});
+
+const reviewRating =
+  document.getElementById(
+    "reviewRating"
+  );
+
+const totalReviews =
+  document.getElementById(
+    "totalReviews"
+  );
+
+  reviewRating.innerText =
+  singleProduct.rating;
+
+totalReviews.innerText =
+  `(${singleProduct.totalReviews} Reviews)`;

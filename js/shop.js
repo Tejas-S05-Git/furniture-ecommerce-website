@@ -137,7 +137,7 @@ const paginatedProducts =
 
         <!-- PRODUCT CARD -->
        <a
-  href="../shop-details.html"
+  href="../shop-details.html?id=${product.id}"
   class="group block"
 >
         <div
@@ -352,7 +352,7 @@ const paginatedProducts =
               ${product.title}
             </h3>
 
-
+    
 
             <!-- PRICE -->
 

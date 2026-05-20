@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop Details</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
@@ -21,11 +21,9 @@
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
-     
-
-     <!-- TOP BAR -->
+  </head>
+  <body>
+    <!-- TOP BAR -->
 
     <div
       id="topBar"
@@ -195,9 +193,7 @@
 
     <div id="overlay" class="fixed inset-0 bg-black/40 hidden z-40"></div>
 
-
-
-     <section
+    <section
       class="relative overflow-hidden bg-[#F5F5F5] py-14 md:py-16 lg:py-20"
     >
       <!-- LIGHT GRADIENT -->
@@ -239,7 +235,7 @@
             >
               Home
             </a>
-             <span class="text-zinc-400 text-base md:text-lg"> / </span>
+            <span class="text-zinc-400 text-base md:text-lg"> / </span>
             <a
               href="./shop.html"
               class="text-zinc-500 text-sm md:text-lg hover:text-zinc-900 duration-300"
@@ -257,1722 +253,454 @@
       </div>
     </section>
 
-
     <!-- =========================
 PRODUCT DETAILS SECTION
 ========================= -->
 
-<section
-  class="py-16 lg:py-24
-  bg-white"
->
-  <div
-    class="max-w-[1300px]
-    mx-auto
-    px-4"
-  >
-
-    <div
-      class="grid
-      grid-cols-1
-      lg:grid-cols-2
-      gap-14
-      xl:gap-20
-      items-start"
-    >
-
-      <!-- =========================
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-[1300px] mx-auto px-4">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-14 xl:gap-20 items-start"
+        >
+          <!-- =========================
       LEFT IMAGE GALLERY
       ========================= -->
 
-      <div>
-
-        <!-- MAIN IMAGE -->
-
-        <div
-  class="relative
-
-  bg-[#F7F7F7]
-
-  rounded-[32px]
-
-  overflow-hidden
-
-  h-[400px]
-  sm:h-[500px]
-  lg:h-[620px]
-
-  flex items-center
-  justify-center
-
-  p-8
-  sm:p-12"
->
-
-  <!-- LEFT BUTTON -->
-
-  <button
-    class="absolute
-    left-4
-    sm:left-5
-    top-1/2
-    -translate-y-1/2
-
-    z-10
-
-    w-[55px]
-    h-[55px]
-
-    sm:w-[60px]
-    sm:h-[60px]
-
-    rounded-[18px]
-
-    bg-[#1F5B2B]
-    hover:bg-[#F6B428]
-
-    duration-300
-
-    flex items-center
-    justify-center
-
-    text-white
-    text-[28px]
-
-    shadow-lg"
-  >
-    <i class="ri-arrow-left-s-line"></i>
-  </button>
-
-  <!-- MAIN IMAGE -->
-
-  <div
-    class="w-full
-    h-full
-
-    flex items-center
-    justify-center"
-  >
-
-    <img
-      src="./assets/images/gaming_chair-removebg-preview.png"
-      alt="Gaming Chair"
-
-      class="max-w-full
-      max-h-full
-
-      w-auto
-      h-auto
-
-      object-contain
-
-      select-none
-
-      transition-all
-      duration-500
-
-      hover:scale-[1.03]"
-    />
-
-  </div>
-
-  <!-- RIGHT BUTTON -->
-
-  <button
-    class="absolute
-    right-4
-    sm:right-5
-    top-1/2
-    -translate-y-1/2
-
-    z-10
-
-    w-[55px]
-    h-[55px]
-
-    sm:w-[60px]
-    sm:h-[60px]
-
-    rounded-[18px]
-
-    bg-[#1F5B2B]
-    hover:bg-[#F6B428]
-
-    duration-300
-
-    flex items-center
-    justify-center
-
-    text-white
-    text-[28px]
-
-    shadow-lg"
-  >
-    <i class="ri-arrow-right-s-line"></i>
-  </button>
-
-</div>
-        <!-- THUMBNAILS -->
-
-       <div
-  class="flex
-  gap-4
-  mt-6"
->
-
-  <!-- ITEM -->
-
-  <button
-    class="group
-
-    w-[110px]
-    h-[120px]
-
-    bg-[#F7F7F7]
-
-    rounded-[22px]
-
-    border-2
-    border-[#1F5B2B]
-
-    overflow-hidden
-
-    flex items-center
-    justify-center
-
-    relative
-
-    duration-300"
-  >
-
-    <img
-      src="./assets/images/gaming_chair-removebg-preview.png"
-      alt=""
-
-      class="w-[82px]
-      h-[82px]
-
-      object-contain
-
-      group-hover:scale-110
-
-      duration-300"
-    />
-
-  </button>
-
-  <!-- ITEM -->
-
-  <button
-    class="group
-
-    w-[110px]
-    h-[120px]
-
-    bg-[#F7F7F7]
-
-    rounded-[22px]
-
-    border-2
-    border-transparent
-
-    hover:border-[#1F5B2B]
-
-    overflow-hidden
-
-    flex items-center
-    justify-center
-
-    relative
-
-    duration-300"
-  >
-
-    <img
-      src="./assets/images/gaming_chair-removebg-preview.png"
-      alt=""
-
-      class="w-[82px]
-      h-[82px]
-
-      object-contain
-
-      group-hover:scale-110
-
-      duration-300"
-    />
-
-  </button>
-
-  <!-- ITEM -->
-
-  <button
-    class="group
-
-    w-[110px]
-    h-[120px]
-
-    bg-[#F7F7F7]
-
-    rounded-[22px]
-
-    border-2
-    border-transparent
-
-    hover:border-[#1F5B2B]
-
-    overflow-hidden
-
-    flex items-center
-    justify-center
-
-    relative
-
-    duration-300"
-  >
-
-    <img
-      src="./assets/images/gaming_chair-removebg-preview.png"
-      alt=""
-
-      class="w-[82px]
-      h-[82px]
-
-      object-contain
-
-      group-hover:scale-110
-
-      duration-300"
-    />
-
-  </button>
-
-  <!-- ITEM -->
-
-  <button
-    class="group
-
-    w-[110px]
-    h-[120px]
-
-    bg-[#F7F7F7]
-
-    rounded-[22px]
-
-    border-2
-    border-transparent
-
-    hover:border-[#1F5B2B]
-
-    overflow-hidden
-
-    flex items-center
-    justify-center
-
-    relative
-
-    duration-300"
-  >
-
-    <img
-      src="./assets/images/gaming_chair-removebg-preview.png"
-      alt=""
-
-      class="w-[82px]
-      h-[82px]
-
-      object-contain
-
-      group-hover:scale-110
-
-      duration-300"
-    />
-
-  </button>
-
-</div>
-      </div>
-
-      <!-- =========================
+          <div>
+            <!-- MAIN IMAGE -->
+
+            <div
+              class="relative bg-[#F7F7F7] rounded-[32px] overflow-hidden h-[400px] sm:h-[500px] lg:h-[620px] flex items-center justify-center p-8 sm:p-12"
+            >
+              <!-- LEFT BUTTON -->
+
+              <button
+                id="prevBtn"
+                class="absolute left-4 sm:left-5 top-1/2 -translate-y-1/2 z-10 w-[55px] h-[55px] sm:w-[60px] sm:h-[60px] rounded-[18px] bg-[#1F5B2B] hover:bg-[#F6B428] duration-300 flex items-center justify-center text-white text-[28px] shadow-lg"
+              >
+                <i class="ri-arrow-left-s-line"></i>
+              </button>
+
+              <!-- MAIN IMAGE -->
+
+              <div class="w-full h-full flex items-center justify-center">
+                <img
+                  id="mainProductImage"
+                  src="./assets/images/gaming_chair-removebg-preview.png"
+                  alt="Gaming Chair"
+                  class="max-w-full max-h-full w-auto h-auto object-contain select-none transition-all duration-500 hover:scale-[1.03]"
+                />
+              </div>
+
+              <!-- RIGHT BUTTON -->
+
+              <button
+                id="nextBtn"
+                class="absolute right-4 sm:right-5 top-1/2 -translate-y-1/2 z-10 w-[55px] h-[55px] sm:w-[60px] sm:h-[60px] rounded-[18px] bg-[#1F5B2B] hover:bg-[#F6B428] duration-300 flex items-center justify-center text-white text-[28px] shadow-lg"
+              >
+                <i class="ri-arrow-right-s-line"></i>
+              </button>
+            </div>
+            <!-- THUMBNAILS -->
+
+            <div id="thumbnailContainer" class="flex gap-4 mt-6"></div>
+          </div>
+
+          <!-- =========================
       RIGHT CONTENT
       ========================= -->
 
-      <div
-        class="pt-2"
-      >
+          <div class="pt-2">
+            <!-- CATEGORY -->
 
-        <!-- CATEGORY -->
+            <p id="productCategory" class="text-zinc-500 text-lg"></p>
 
-        <p
-          class="text-zinc-500
-          text-lg"
-        >
-          Chair
-        </p>
+            <!-- TITLE -->
 
-        <!-- TITLE -->
+            <div class="flex items-center gap-4 flex-wrap mt-3">
+              <h1
+                id="productTitle"
+                class="text-3xl sm:text-4xl font-bold text-zinc-900 leading-tight"
+              ></h1>
 
-        <div
-          class="flex items-center
-          gap-4
-          flex-wrap
-          mt-3"
-        >
+              <!-- STOCK -->
 
-          <h1
-            class="text-3xl
-            sm:text-4xl
-            font-bold
-            text-zinc-900
-            leading-tight"
-          >
-            Red Gaming Chair
-          </h1>
-
-          <!-- STOCK -->
-
-          <span
-            class="px-4
-            py-1.5
-
-            rounded-full
-
-            border
-            border-[#6DD19C]
-
-            bg-[#EFFFF5]
-
-            text-[#2BAE66]
-            font-small"
-          >
-            In Stock
-          </span>
-
-        </div>
-
-        <!-- RATING -->
-
-        <div
-          class="flex items-center
-          gap-4
-          mt-6"
-        >
-
-          <div
-            class="flex items-center
-            gap-1
-            text-[#F6B428]
-            text-xl"
-          >
-            <i class="ri-star-fill"></i>
-            <i class="ri-star-fill"></i>
-            <i class="ri-star-fill"></i>
-            <i class="ri-star-fill"></i>
-            <i class="ri-star-fill"></i>
-          </div>
-
-          <p
-            class="text-zinc-600
-            text-lg"
-          >
-            4.9 (245 Review)
-          </p>
-
-        </div>
-
-        <!-- PRICE -->
-
-        <div
-          class="flex items-center
-          gap-5
-          mt-7"
-        >
-
-          <span
-            class="text-4xl
-            font-bold
-            text-zinc-900"
-          >
-            $90.00
-          </span>
-
-          <span
-            class="text-2xl
-            text-zinc-400
-            line-through"
-          >
-            $100.00
-          </span>
-
-        </div>
-
-        <!-- DESCRIPTION -->
-
-        <p
-          class="mt-8
-
-          text-zinc-500
-          leading-[30px]
-          text-lg"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-
-        <!-- COLORS -->
-
-        <div
-          class="mt-10"
-        >
-
-          <p
-            class="text-xl
-            font-semibold
-            text-zinc-900"
-          >
-            Color :
-            <span
-              class="text-zinc-500
-              font-normal"
-            >
-              Black
-            </span>
-          </p>
-
-          <!-- COLOR BUTTONS -->
-
-          <div
-            class="flex items-center
-            gap-4
-            mt-5"
-          >
-
-            <button
-              class="w-9
-              h-9
-              rounded-full
-
-              bg-black
-
-              border-[3px]
-              border-white
-
-              outline
-              outline-2
-              outline-black"
-            ></button>
-
-            <button
-              class="w-9
-              h-9
-              rounded-full
-              bg-[#6E2C12]"
-            ></button>
-
-            <button
-              class="w-9
-              h-9
-              rounded-full
-              bg-[#ECECEC]"
-            ></button>
-
-            <button
-              class="w-9
-              h-9
-              rounded-full
-              bg-[#009966]"
-            ></button>
-
-            <button
-              class="w-9
-              h-9
-              rounded-full
-              bg-[#0A89C9]"
-            ></button>
-
-          </div>
-
-        </div>
-
-        <!-- ACTIONS -->
-
-        <div
-          class="flex items-center
-          gap-5
-          flex-wrap
-
-          mt-12"
-        >
-
-          <!-- QUANTITY -->
-
-          <div
-            class="flex items-center
-
-            border
-            border-zinc-200
-
-            rounded-full
-            overflow-hidden"
-          >
-
-            <button
-              class="w-[50px]
-              h-[50px]
-
-              text-2xl
-              text-zinc-600
-
-              hover:bg-zinc-100
-
-              duration-300"
-            >
-              -
-            </button>
-
-            <span
-              class="w-[50px]
-              text-center
-
-              text-sm
-              font-medium"
-            >
-              4
-            </span>
-
-            <button
-              class="w-[50px]
-              h-[50px]
-
-              text-2xl
-              text-zinc-600
-
-              hover:bg-zinc-100
-
-              duration-300"
-            >
-              +
-            </button>
-
-          </div>
-
-          <!-- ADD TO CART -->
-
-          <button
-            class="h-[50px]
-
-            px-10
-
-            rounded-full
-
-            bg-primary
-            hover:bg-accent
-
-            duration-300
-
-            text-white
-            text-sm
-            font-semibold"
-          >
-            Add To Cart
-          </button>
-
-          <!-- BUY NOW -->
-
-          <button
-            class="h-[50px]
-
-            px-10
-
-            rounded-full
-
-            bg-accent
-            hover:bg-primary
-
-            duration-300
-
-            text-black
-            text-sm
-            font-semibold"
-          >
-            Buy Now
-          </button>
-
-          <!-- HEART -->
-
-          <button
-            class="w-[50px]
-            h-[50px]
-
-            rounded-full
-
-            border
-            border-zinc-200
-
-            hover:bg-[#1F5B2B]
-            hover:text-white
-
-            duration-300
-
-            flex items-center
-            justify-center
-
-            text-xl
-            text-zinc-700"
-          >
-            <i class="ri-heart-line"></i>
-          </button>
-
-        </div>
-
-        <!-- PRODUCT INFO -->
-
-        <div
-          class="border-t
-          border-zinc-200
-
-          mt-10
-          pt-8"
-        >
-
-          <!-- SKU -->
-
-          <div
-            class="flex
-            gap-2
-            flex-wrap"
-          >
-
-            <span
-              class="font-semibold
-              text-xl"
-            >
-              SKU :
-            </span>
-
-            <span
-              class="text-zinc-500
-              text-xl"
-            >
-              FRNC87654ABC
-            </span>
-
-          </div>
-
-          <!-- TAGS -->
-
-          <div
-            class="flex
-            gap-2
-            flex-wrap
-
-            mt-4"
-          >
-
-            <span
-              class="font-semibold
-              text-xl"
-            >
-              Tags :
-            </span>
-
-            <span
-              class="text-zinc-500
-              text-xl"
-            >
-              Furniture, Office, Gaming Chair, Chair
-            </span>
-
-          </div>
-
-          <!-- SHARE -->
-
-          <div
-            class="flex items-center
-            gap-4
-            flex-wrap
-
-            mt-5"
-          >
-
-            <span
-              class="font-semibold
-              text-xl"
-            >
-              Share :
-            </span>
-
-            <div
-              class="flex items-center
-              gap-3"
-            >
-
-              <button
-                class="w-10
-                h-10
-
-                rounded-full
-
-                bg-primary
-                hover:bg-accent
-
-                duration-300
-
-                flex items-center
-                justify-center
-
-                text-white"
+              <span
+                class="px-4 py-1.5 rounded-full border border-[#6DD19C] bg-[#EFFFF5] text-[#2BAE66] font-small"
               >
-                <i class="ri-facebook-fill"></i>
-              </button>
-
-              <button
-                class="w-10
-                h-10
-
-                rounded-full
-
-                bg-[#1F5B2B]
-                hover:bg-[#F6B428]
-
-                duration-300
-
-                flex items-center
-                justify-center
-
-                text-white"
-              >
-                <i class="ri-twitter-fill"></i>
-              </button>
-
-              <button
-                class="w-10
-                h-10
-
-                rounded-full
-
-                bg-[#1F5B2B]
-                hover:bg-[#F6B428]
-
-                duration-300
-
-                flex items-center
-                justify-center
-
-                text-white"
-              >
-                <i class="ri-pinterest-fill"></i>
-              </button>
-
-              <button
-                class="w-10
-                h-10
-
-                rounded-full
-
-                bg-[#1F5B2B]
-                hover:bg-[#F6B428]
-
-                duration-300
-
-                flex items-center
-                justify-center
-
-                text-white"
-              >
-                <i class="ri-instagram-line"></i>
-              </button>
-
+                In Stock
+              </span>
             </div>
 
+            <!-- RATING -->
+
+            <div class="flex items-center gap-4 mt-6">
+              <div class="flex items-center gap-1 text-[#F6B428] text-xl">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+
+              <p id="productRating" class="text-zinc-600 text-lg"></p>
+            </div>
+
+            <!-- PRICE -->
+
+            <div class="flex items-center gap-5 mt-7">
+              <span
+                id="productPrice"
+                class="text-4xl font-bold text-zinc-900"
+              ></span>
+
+              <span
+                id="productOldPrice"
+                class="text-2xl text-zinc-400 line-through"
+              ></span>
+            </div>
+
+            <!-- DESCRIPTION -->
+
+            <p
+              id="productDescription"
+              class="mt-8 text-zinc-500 leading-[30px] text-lg"
+            ></p>
+
+            <!-- COLORS -->
+
+            <div class="mt-10">
+              <p class="text-xl font-semibold text-zinc-900">
+                Color :
+                <span class="text-zinc-500 font-normal"> Black </span>
+              </p>
+
+              <!-- COLOR BUTTONS -->
+
+              <div class="flex items-center gap-4 mt-5">
+                <button
+                  class="w-9 h-9 rounded-full bg-black border-[3px] border-white outline outline-2 outline-black"
+                ></button>
+
+                <button class="w-9 h-9 rounded-full bg-[#6E2C12]"></button>
+
+                <button class="w-9 h-9 rounded-full bg-[#ECECEC]"></button>
+
+                <button class="w-9 h-9 rounded-full bg-[#009966]"></button>
+
+                <button class="w-9 h-9 rounded-full bg-[#0A89C9]"></button>
+              </div>
+            </div>
+
+            <!-- ACTIONS -->
+
+            <div class="flex items-center gap-5 flex-wrap mt-12">
+              <!-- QUANTITY -->
+
+              <div
+                class="flex items-center border border-zinc-200 rounded-full overflow-hidden"
+              >
+                <button
+                  id="minusBtn"
+                  class="w-[50px] h-[50px] text-2xl text-zinc-600 hover:bg-zinc-100 duration-300"
+                >
+                  -
+                </button>
+
+                <span
+                  id="quantityCount"
+                  class="w-[50px] text-center text-sm font-medium"
+                >
+                  4
+                </span>
+
+                <button
+                  id="plusBtn"
+                  class="w-[50px] h-[50px] text-2xl text-zinc-600 hover:bg-zinc-100 duration-300"
+                >
+                  +
+                </button>
+              </div>
+
+              <!-- ADD TO CART -->
+
+              <button
+                class="h-[50px] px-10 rounded-full bg-primary hover:bg-accent duration-300 text-white text-sm font-semibold"
+              >
+                Add To Cart
+              </button>
+
+              <!-- BUY NOW -->
+
+              <button
+                class="h-[50px] px-10 rounded-full bg-accent hover:bg-primary duration-300 text-black text-sm font-semibold"
+              >
+                Buy Now
+              </button>
+
+              <!-- HEART -->
+
+              <button
+                class="w-[50px] h-[50px] rounded-full border border-zinc-200 hover:bg-[#1F5B2B] hover:text-white duration-300 flex items-center justify-center text-xl text-zinc-700"
+              >
+                <i class="ri-heart-line"></i>
+              </button>
+            </div>
+
+            <!-- PRODUCT INFO -->
+
+            <div class="border-t border-zinc-200 mt-10 pt-8">
+              <!-- SKU -->
+
+              <div class="flex gap-2 flex-wrap">
+                <span class="font-semibold text-xl"> SKU : </span>
+
+                <span id="productSku" class="text-zinc-500 text-xl"></span>
+              </div>
+
+              <!-- TAGS -->
+
+              <div class="flex gap-2 flex-wrap mt-4">
+                <span class="font-semibold text-xl"> Tags : </span>
+
+                <span id="productTags" class="text-zinc-500 text-xl"></span>
+              </div>
+
+              <!-- SHARE -->
+
+              <div class="flex items-center gap-4 flex-wrap mt-5">
+                <span class="font-semibold text-xl"> Share : </span>
+
+                <div class="flex items-center gap-3">
+                  <button
+                    class="w-10 h-10 rounded-full bg-primary hover:bg-accent duration-300 flex items-center justify-center text-white"
+                  >
+                    <i class="ri-facebook-fill"></i>
+                  </button>
+
+                  <button
+                    class="w-10 h-10 rounded-full bg-[#1F5B2B] hover:bg-[#F6B428] duration-300 flex items-center justify-center text-white"
+                  >
+                    <i class="ri-twitter-fill"></i>
+                  </button>
+
+                  <button
+                    class="w-10 h-10 rounded-full bg-[#1F5B2B] hover:bg-[#F6B428] duration-300 flex items-center justify-center text-white"
+                  >
+                    <i class="ri-pinterest-fill"></i>
+                  </button>
+
+                  <button
+                    class="w-10 h-10 rounded-full bg-[#1F5B2B] hover:bg-[#F6B428] duration-300 flex items-center justify-center text-white"
+                  >
+                    <i class="ri-instagram-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </div>
-
-  </div>
-</section>
-
-
-<!-- =========================
+    <!-- =========================
 PRODUCT TABS SECTION
 ========================= -->
 
-<section
-  class="py-20
-  lg:py-28"
->
-
-  <div
-    class="max-w-[1300px]
-    mx-auto
-    px-4"
-  >
-
-    <!-- =========================
+    <section class="py-20 lg:py-28">
+      <div class="max-w-[1300px] mx-auto px-4">
+        <!-- =========================
     TAB BUTTONS
     ========================= -->
 
-    <div
-      class="border-b
-      border-zinc-200"
-    >
+        <div class="border-b border-zinc-200">
+          <div
+            class="flex items-center justify-center gap-5 sm:gap-10 lg:gap-20 overflow-x-auto"
+          >
+            <!-- DESCRIPTION -->
 
-      <div
-        class="flex items-center
-        justify-center
+            <button
+              data-tab="description"
+              class="tabBtn relative text-[18px] sm:text-[26px] lg:text-[32px] font-bold text-[#1F5B2B] pb-6 whitespace-nowrap"
+            >
+              Description
 
-        gap-5
-        sm:gap-10
-        lg:gap-20
+              <span
+                class="absolute left-0 bottom-0 w-full h-[4px] rounded-full bg-[#1F5B2B]"
+              ></span>
+            </button>
 
-        overflow-x-auto"
-      >
+            <!-- ADDITIONAL -->
 
-        <!-- DESCRIPTION -->
+            <button
+              data-tab="additional"
+              class="tabBtn relative text-[18px] sm:text-[26px] lg:text-[32px] font-bold text-zinc-400 hover:text-[#1F5B2B] duration-300 pb-6 whitespace-nowrap"
+            >
+              Additional Information
+            </button>
 
-        <button
-          data-tab="description"
+            <!-- REVIEW -->
 
-          class="tabBtn
+            <button
+              data-tab="review"
+              class="tabBtn relative text-[18px] sm:text-[26px] lg:text-[32px] font-bold text-zinc-400 hover:text-[#1F5B2B] duration-300 pb-6 whitespace-nowrap"
+            >
+              Review
+            </button>
+          </div>
+        </div>
 
-          relative
-
-          text-[18px]
-          sm:text-[26px]
-          lg:text-[32px]
-
-          font-bold
-
-          text-[#1F5B2B]
-
-          pb-6
-
-          whitespace-nowrap"
-        >
-
-          Description
-
-          <span
-            class="absolute
-            left-0
-            bottom-0
-
-            w-full
-            h-[4px]
-
-            rounded-full
-
-            bg-[#1F5B2B]"
-          ></span>
-
-        </button>
-
-        <!-- ADDITIONAL -->
-
-        <button
-          data-tab="additional"
-
-          class="tabBtn
-
-          relative
-
-          text-[18px]
-          sm:text-[26px]
-          lg:text-[32px]
-
-          font-bold
-
-          text-zinc-400
-
-          hover:text-[#1F5B2B]
-
-          duration-300
-
-          pb-6
-
-          whitespace-nowrap"
-        >
-          Additional Information
-        </button>
-
-        <!-- REVIEW -->
-
-        <button
-          data-tab="review"
-
-          class="tabBtn
-
-          relative
-
-          text-[18px]
-          sm:text-[26px]
-          lg:text-[32px]
-
-          font-bold
-
-          text-zinc-400
-
-          hover:text-[#1F5B2B]
-
-          duration-300
-
-          pb-6
-
-          whitespace-nowrap"
-        >
-          Review
-        </button>
-
-      </div>
-
-    </div>
-
-    <!-- =========================
+        <!-- =========================
     TAB CONTENT WRAPPER
     ========================= -->
 
-    <div
-      class="mt-16"
-    >
+        <div class="mt-16">
+          <!-- ===================================================== -->
+          <!-- DESCRIPTION TAB -->
+          <!-- ===================================================== -->
 
-      <!-- ===================================================== -->
-      <!-- DESCRIPTION TAB -->
-      <!-- ===================================================== -->
-
-      <div
-        id="descriptionTab"
-        class="tabContent"
-      >
-
-        <div
-          class="space-y-5"
-        >
-
-          <p
-            class="text-zinc-600
-
-            text-lg
-            lg:text-[20px]
-
-            leading-[38px]"
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-
-          <p
-            class="text-zinc-600
-
-            text-lg
-            lg:text-[20px]
-
-            leading-[42px]"
-          >
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          </p>
-
-          <!-- FEATURES -->
-
-          <div
-            class="space-y-3"
-          >
-
-            <!-- ITEM -->
-
-            <div
-              class="flex items-start
-              gap-4"
-            >
-
-              <div
-                class="relative
-                mt-1"
-              >
-
-                <div
-                  class="w-8
-                  h-8
-
-                  rounded-full
-
-                  bg-[#1F5B2B]"
-                ></div>
-
-                <div
-                  class="absolute
-                  left-[-2px]
-                  top-1/2
-                  -translate-y-1/2
-
-                  w-5
-                  h-5
-
-                  rounded-full
-
-                  bg-[#F6B428]"
-                ></div>
-
-              </div>
-
+          <div id="descriptionTab" class="tabContent">
+            <div class="space-y-5">
               <p
-                class="text-zinc-700
+                id="dynamicDescription"
+                class="text-zinc-600 text-lg lg:text-[20px] leading-[38px]"
+              ></p>
 
-                text-lg
-                lg:text-[22px]
-
-                leading-[38px]"
-              >
-                100% Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <p class="text-zinc-600 text-lg lg:text-[20px] leading-[42px]">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
               </p>
 
+              <!-- FEATURES -->
+
+              <div id="featuresContainer" class="space-y-3"></div>
             </div>
-
-            <!-- ITEM -->
-
-            <div
-              class="flex items-start
-              gap-5"
-            >
-
-              <div
-                class="relative
-                mt-1"
-              >
-
-                <div
-                  class="w-8
-                  h-8
-
-                  rounded-full
-
-                  bg-[#1F5B2B]"
-                ></div>
-
-                <div
-                  class="absolute
-                  left-[-2px]
-                  top-1/2
-                  -translate-y-1/2
-
-                  w-5
-                  h-5
-
-                  rounded-full
-
-                  bg-[#F6B428]"
-                ></div>
-
-              </div>
-
-              <p
-                class="text-zinc-700
-
-                text-lg
-                lg:text-[22px]
-
-                leading-[38px]"
-              >
-                Ut at nunc vel nisi gravida dictum.
-              </p>
-
-            </div>
-
-            <!-- ITEM -->
-
-            <div
-              class="flex items-start
-              gap-5"
-            >
-
-              <div
-                class="relative
-                mt-1"
-              >
-
-                <div
-                  class="w-8
-                  h-8
-
-                  rounded-full
-
-                  bg-[#1F5B2B]"
-                ></div>
-
-                <div
-                  class="absolute
-                  left-[-2px]
-                  top-1/2
-                  -translate-y-1/2
-
-                  w-5
-                  h-5
-
-                  rounded-full
-
-                  bg-[#F6B428]"
-                ></div>
-
-              </div>
-
-              <p
-                class="text-zinc-700
-
-                text-lg
-                lg:text-[22px]
-
-                leading-[38px]"
-              >
-                Donec non velit sed risus tincidunt suscipit.
-              </p>
-
-            </div>
-
-            <!-- ITEM -->
-
-            <div
-              class="flex items-start
-              gap-5"
-            >
-
-              <div
-                class="relative
-                mt-1"
-              >
-
-                <div
-                  class="w-8
-                  h-8
-
-                  rounded-full
-
-                  bg-[#1F5B2B]"
-                ></div>
-
-                <div
-                  class="absolute
-                  left-[-2px]
-                  top-1/2
-                  -translate-y-1/2
-
-                  w-5
-                  h-5
-
-                  rounded-full
-
-                  bg-[#F6B428]"
-                ></div>
-
-              </div>
-
-              <p
-                class="text-zinc-700
-
-                text-lg
-                lg:text-[22px]
-
-                leading-[38px]"
-              >
-                Cras laoreet lacus in dui posuere fringilla.
-              </p>
-
-            </div>
-
           </div>
 
-        </div>
-
-      </div>
-
-      <!-- ===================================================== -->
-      <!-- ADDITIONAL INFORMATION -->
-      <!-- ===================================================== -->
-
-      <div
-        id="additionalTab"
-        class="tabContent hidden"
-      >
-
-        <div
-          class="overflow-hidden
-
-          rounded-[30px]
-
-          border
-          border-zinc-200"
-        >
-
-          <table
-            class="w-full"
-          >
-
-            <thead
-              class="bg-accent"
-            >
-
-              <tr>
-
-                <th
-                  class="text-left
-
-                  py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[22px]
-
-                  font-bold
-
-                  text-zinc-900"
-                >
-                  Feature
-                </th>
-
-                <th
-                  class="text-left
-
-                  py-6
-                  px-6
-                  lg:px-8
-
-                  text-lg
-                  lg:text-[22px]
-
-                  font-bold
-
-                  text-zinc-900"
-                >
-                  Description
-                </th>
-
-              </tr>
-
-            </thead>
-
-            <tbody>
-
-              <tr
-                class="bg-[#F7F7F7]"
-              >
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Seat Material
-                </td>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Leather
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Color
-                </td>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Black, Brown, Grey, Green, Blue
-                </td>
-
-              </tr>
-
-              <tr
-                class="bg-[#F7F7F7]"
-              >
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Item Weight
-                </td>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                 text-sm
-                  lg:text-[20px]
-                  text-zinc-700"
-                >
-                  25 Kilograms
-                </td>
-
-              </tr>
-
-              <tr>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                 text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Dimensions
-                </td>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                  text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  21"D x 21"W x 48"H
-                </td>
-
-              </tr>
-
-              <tr
-                class="bg-[#F7F7F7]"
-              >
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                 text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  Brand
-                </td>
-
-                <td
-                  class="py-6
-                  px-6
-                  lg:px-8
-
-                 text-sm
-                  lg:text-[20px]
-
-                  text-zinc-700"
-                >
-                  KD Design
-                </td>
-
-              </tr>
-
-            </tbody>
-
-          </table>
-
-        </div>
-
-      </div>
-
-      <!-- ===================================================== -->
-      <!-- REVIEW TAB -->
-      <!-- ===================================================== -->
-
-      <div
-        id="reviewTab"
-        class="tabContent hidden"
-      >
-
-        <div
-          class="grid
-          grid-cols-1
-          xl:grid-cols-[280px_1fr]
-
-          gap-14
-
-          pb-14
-
-          border-b
-          border-zinc-200"
-        >
-
-          <!-- LEFT -->
-
-          <div
-            class="flex flex-col
-            items-center
-            justify-center
-
-            xl:border-r
-            border-zinc-200"
-          >
-
-            <h2
-              class="text-6xl
-              font-bold"
-            >
-              4.9
-            </h2>
-
-            <p
-              class="mt-2
-              text-zinc-500"
-            >
-              out of 5
-            </p>
-
-            <div
-              class="flex
-              gap-1
-
-              text-[#F6B428]
-
-              text-2xl
-
-              mt-3"
-            >
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
+          <!-- ===================================================== -->
+          <!-- ADDITIONAL INFORMATION -->
+          <!-- ===================================================== -->
+
+          <div id="additionalTab" class="tabContent hidden">
+            <div class="overflow-hidden rounded-[30px] border border-zinc-200">
+              <table class="w-full">
+                <thead class="bg-accent">
+                  <tr>
+                    <th
+                      class="text-left py-6 px-6 lg:px-8 text-sm lg:text-[22px] font-bold text-zinc-900"
+                    >
+                      Feature
+                    </th>
+
+                    <th
+                      class="text-left py-6 px-6 lg:px-8 text-lg lg:text-[22px] font-bold text-zinc-900"
+                    >
+                      Description
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody id="additionalInfoContainer"></tbody>
+              </table>
             </div>
-
-            <p
-              class="mt-3
-              text-zinc-500"
-            >
-              (245 Review)
-            </p>
-
           </div>
 
-          <!-- RIGHT -->
+          <!-- ===================================================== -->
+          <!-- REVIEW TAB -->
+          <!-- ===================================================== -->
 
-          <div
-            class="space-y-5"
-          >
-
-            <!-- BAR -->
-
+          <div id="reviewTab" class="tabContent hidden">
             <div
-              class="flex items-center
-              gap-5"
+              class="grid grid-cols-1 xl:grid-cols-[280px_1fr] gap-14 pb-14 border-b border-zinc-200"
             >
-
-              <span
-                class="w-[70px]
-                text-zinc-600"
-              >
-                5 Star
-              </span>
+              <!-- LEFT -->
 
               <div
-                class="flex-1
-                h-[8px]
-
-                rounded-full
-
-                bg-zinc-200
-
-                overflow-hidden"
+                class="flex flex-col items-center justify-center xl:border-r border-zinc-200"
               >
+                <h2 id="reviewRating" class="text-6xl font-bold"></h2>
 
-                <div
-                  class="w-[80%]
-                  h-full
+                <p class="mt-2 text-zinc-500">out of 5</p>
 
-                  bg-[#F6B428]"
-                ></div>
+                <div class="flex gap-1 text-[#F6B428] text-2xl mt-3">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
 
+                <p id="totalReviews" class="mt-3 text-zinc-500"></p>
               </div>
 
-            </div>
+              <!-- RIGHT -->
 
-            <!-- BAR -->
+              <div class="space-y-5">
+                <!-- BAR -->
 
-            <div
-              class="flex items-center
-              gap-5"
-            >
+                <div class="flex items-center gap-5">
+                  <span class="w-[70px] text-zinc-600"> 5 Star </span>
 
-              <span
-                class="w-[70px]
-                text-zinc-600"
-              >
-                4 Star
-              </span>
+                  <div
+                    class="flex-1 h-[8px] rounded-full bg-zinc-200 overflow-hidden"
+                  >
+                    <div class="w-[80%] h-full bg-[#F6B428]"></div>
+                  </div>
+                </div>
 
-              <div
-                class="flex-1
-                h-[8px]
+                <!-- BAR -->
 
-                rounded-full
+                <div class="flex items-center gap-5">
+                  <span class="w-[70px] text-zinc-600"> 4 Star </span>
 
-                bg-zinc-200
-
-                overflow-hidden"
-              >
-
-                <div
-                  class="w-[40%]
-                  h-full
-
-                  bg-[#F6B428]"
-                ></div>
-
+                  <div
+                    class="flex-1 h-[8px] rounded-full bg-zinc-200 overflow-hidden"
+                  >
+                    <div class="w-[40%] h-full bg-[#F6B428]"></div>
+                  </div>
+                </div>
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
+    </section>
 
-    </div>
-
-  </div>
-
-</section>
-
-
-<!-- =========================================
+    <!-- =========================================
 RELATED PRODUCTS
 ========================================= -->
 
-<section
-  class="py-20
-  lg:py-28"
->
+    <section class="py-20 lg:py-28">
+      <div class="max-w-[1400px] mx-auto px-4">
+        <!-- TOP TITLE -->
 
-  <div
-    class="max-w-[1400px]
-    mx-auto
-    px-4"
-  >
+        <div class="text-center">
+          <div class="flex items-center justify-center gap-3">
+            <span class="w-5 h-[2px] bg-[#F6B428]"></span>
 
-    <!-- TOP TITLE -->
+            <p class="text-zinc-600 text-xl">Related Products</p>
+          </div>
 
-    <div
-      class="text-center"
-    >
+          <h2
+            class="mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight text-[#222222]"
+          >
+            Explore
+            <span class="text-[#1F5B2B]"> Related Products </span>
+          </h2>
+        </div>
 
-      <div
-        class="flex items-center
-        justify-center
-        gap-3"
-      >
+        <!-- PRODUCTS GRID -->
 
-        <span
-          class="w-5
-          h-[2px]
-
-          bg-[#F6B428]"
-        ></span>
-
-        <p
-          class="text-zinc-600
-
-          text-xl"
-        >
-          Related Products
-        </p>
-
+        <div
+          id="relatedProductsContainer"
+          class="flex gap-7 overflow-x-auto scroll-smooth pb-4 mt-16 no-scrollbar"
+        ></div>
       </div>
+    </section>
 
-
-
-      <h2
-        class="mt-5
-
-        text-3xl
-        sm:text-4xl
-        lg:text-5xl
-
-        font-bold
-
-        leading-tight
-
-        text-[#222222]"
-      >
-        Explore
-        <span class="text-[#1F5B2B]">
-          Related Products
-        </span>
-      </h2>
-
-    </div>
-
-
-
-    <!-- PRODUCTS GRID -->
-
-   <div
-  id="relatedProductsContainer"
-
-  class="flex
-  gap-7
-
-  overflow-x-auto
-
-  scroll-smooth
-
-  pb-4
-  mt-16
-
-  no-scrollbar"
-></div>
-
-  </div>
-
-</section>
-
-
-  <!-- =========================
+    <!-- =========================
 FEATURES SECTION
 ========================= -->
 
@@ -2100,17 +828,7 @@ FEATURES SECTION
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
-  
-<!-- FOOTER -->
+    <!-- FOOTER -->
 
     <footer class="bg-primary overflow-hidden relative">
       <!-- FLOATING GRADIENTS -->
@@ -2500,7 +1218,7 @@ BOTTOM BAR
       </button>
     </footer>
 
-     <script src="./js/products.js"></script>
+    <script src="./js/products.js"></script>
 
     <script src="./js/shop.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -2520,5 +1238,5 @@ BOTTOM BAR
     <script src="./js/footer.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mainColor.js"></script>
-</body>
+  </body>
 </html>
