@@ -253,17 +253,59 @@
 
 
    <!-- =========================
+SCROLL PROGRESS BAR
+========================= -->
+
+<div
+  id="progressBar"
+
+  class="fixed
+  top-0 left-0
+
+  h-[4px]
+  w-0
+
+  bg-[#D4A437]
+
+  z-[9999]
+
+  transition-all
+  duration-150"
+></div>
+
+
+
+
+
+<!-- =========================
 OUR STORY SECTION
 ========================= -->
 
-<section class="bg-white py-18 lg:py-24 overflow-hidden">
+<section
+  class="bg-white
 
-  <div class="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+  py-16
+  sm:py-20
+  lg:py-24
+
+  overflow-hidden"
+>
+
+  <div
+    class="max-w-[1320px]
+
+    mx-auto
+
+    px-4
+    sm:px-6
+    lg:px-8"
+  >
 
     <!-- TOP CONTENT -->
 
     <div
       class="max-w-4xl mx-auto text-center"
+
       data-aos="fade-up"
       data-aos-duration="1000"
     >
@@ -276,7 +318,10 @@ OUR STORY SECTION
 
         <p
           class="text-[#555]
-          text-xl sm:text-2xl
+
+          text-lg
+          sm:text-xl
+
           font-medium tracking-wide"
         >
           Our Story
@@ -287,24 +332,41 @@ OUR STORY SECTION
       <!-- MAIN TITLE -->
 
       <h2
-        class="text-4xl sm:text-5xl lg:text-6xl
-        font-bold leading-[1.15]
+        class="text-3xl
+        sm:text-4xl
+        md:text-5xl
+        lg:text-6xl
+
+        font-bold
+        leading-[1.15]
+
         text-[#1E1E1E]"
       >
         Crafted Comfort:
+
         <span class="text-[#2E5E3B]">
           Quality Materials,
           Enduring Designs
         </span>
+
       </h2>
 
       <!-- DESCRIPTION -->
 
       <p
         class="mt-6
+
         text-[#666]
-        text-base sm:text-lg
-        leading-8"
+
+        text-sm
+        sm:text-base
+        lg:text-lg
+
+        leading-7
+        sm:leading-8
+
+        max-w-3xl
+        mx-auto"
       >
         We create timeless furniture pieces using premium materials,
         modern craftsmanship, and thoughtful detailing that transforms
@@ -316,8 +378,11 @@ OUR STORY SECTION
       <div class="mt-10">
 
         <h3
-          class="text-4xl
+          class="text-3xl
+          sm:text-4xl
+
           text-[#2B2B2B]
+
           font-[cursive]"
         >
           Jenny Alexander
@@ -325,11 +390,16 @@ OUR STORY SECTION
 
         <p
           class="mt-2
+
           text-[#666]
-          text-sm sm:text-base"
+
+          text-sm
+          sm:text-base"
         >
           Jenny Alexander
+
           <span class="text-[#D4A437]">•</span>
+
           CEO
         </p>
 
@@ -337,118 +407,179 @@ OUR STORY SECTION
 
     </div>
 
+
+
+
+
     <!-- IMAGE GRID -->
 
-   <div
-  class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-16"
->
-
-  <!-- LEFT IMAGE -->
-
-  <div
-    class="rounded-[28px]
-    overflow-hidden
-
-    h-[350px]
-    sm:h-[500px]
-    lg:h-[510px]"
-
-    data-aos="fade-right"
-    data-aos-duration="1200"
-  >
-
-    <img
-      src="https://i1-e.pinimg.com/1200x/a8/a0/27/a8a027fc7ca8e3ba19f44482ab052b4e.jpg"
-
-      alt="Furniture Worker"
-
-      class="w-full h-full
-      object-cover
-      object-center
-
-      hover:scale-105
-      duration-700"
-    />
-
-  </div>
-
-  <!-- RIGHT IMAGES -->
-
-  <div class="flex flex-col gap-6">
-
-    <!-- TOP -->
-
     <div
-      class="rounded-[28px]
-      overflow-hidden
+      class="grid
 
-      h-[242px]"
+      grid-cols-1
+      lg:grid-cols-2
 
-      data-aos="fade-left"
-      data-aos-duration="1200"
+      gap-5
+      sm:gap-6
+
+      mt-12
+      lg:mt-16"
     >
 
-      <img
-        src="https://i1-e.pinimg.com/1200x/ab/b0/6f/abb06ff3cad05513153de90b9ca725d8.jpg"
+      <!-- LEFT IMAGE -->
 
-        alt="Machine Work"
+      <div
+        class="rounded-[24px]
+        sm:rounded-[28px]
 
-        class="w-full h-full
-        object-cover
-        object-center
+        overflow-hidden
 
-        hover:scale-105
-        duration-700"
-      />
+        h-[300px]
+        sm:h-[450px]
+        lg:h-[510px]"
+
+        data-aos="fade-right"
+        data-aos-duration="1200"
+      >
+
+        <img
+          src="https://i1-e.pinimg.com/1200x/a8/a0/27/a8a027fc7ca8e3ba19f44482ab052b4e.jpg"
+
+          alt="Furniture Worker"
+
+          loading="lazy"
+          decoding="async"
+
+          class="w-full h-full
+
+          object-cover
+          object-center
+
+          hover:scale-105
+          duration-700"
+        />
+
+      </div>
+
+
+
+
+
+      <!-- RIGHT IMAGES -->
+
+      <div class="flex flex-col gap-5 sm:gap-6">
+
+        <!-- TOP -->
+
+        <div
+          class="rounded-[24px]
+          sm:rounded-[28px]
+
+          overflow-hidden
+
+          h-[220px]
+          sm:h-[240px]"
+
+          data-aos="fade-left"
+          data-aos-duration="1200"
+        >
+
+          <img
+            src="https://i1-e.pinimg.com/1200x/ab/b0/6f/abb06ff3cad05513153de90b9ca725d8.jpg"
+
+            alt="Machine Work"
+
+            loading="lazy"
+            decoding="async"
+
+            class="w-full h-full
+
+            object-cover
+            object-center
+
+            hover:scale-105
+            duration-700"
+          />
+
+        </div>
+
+
+
+
+
+        <!-- BOTTOM -->
+
+        <div
+          class="rounded-[24px]
+          sm:rounded-[28px]
+
+          overflow-hidden
+
+          h-[220px]
+          sm:h-[240px]"
+
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+
+          <img
+            src="https://i.pinimg.com/736x/64/fe/85/64fe85ea0599bc2e76bdd7ce0d0b9702.jpg"
+
+            alt="Wood Working"
+
+            loading="lazy"
+            decoding="async"
+
+            class="w-full h-full
+
+            object-cover
+            object-center
+
+            hover:scale-105
+            duration-700"
+          />
+
+        </div>
+
+      </div>
 
     </div>
 
-    <!-- BOTTOM -->
 
-    <div
-      class="rounded-[28px]
-      overflow-hidden
 
-      h-[242px]"
 
-      data-aos="fade-left"
-      data-aos-delay="200"
-      data-aos-duration="1200"
-    >
-
-      <img
-        src="https://i.pinimg.com/736x/64/fe/85/64fe85ea0599bc2e76bdd7ce0d0b9702.jpg"
-
-        alt="Wood Working"
-
-        class="w-full h-full
-        object-cover
-        object-center
-
-        hover:scale-105
-        duration-700"
-      />
-
-    </div>
-
-  </div>
-
-</div>
 
     <!-- STATS BOX -->
 
     <div
-      class="mt-10
+      class="mt-8
+      sm:mt-10
+
       bg-[#D4A437]
-      rounded-[28px]
-      px-6 sm:px-10
-      py-8"
+
+      rounded-[24px]
+      sm:rounded-[28px]
+
+      px-5
+      sm:px-8
+      lg:px-10
+
+      py-6
+      sm:py-8"
+
       data-aos="zoom-in"
       data-aos-duration="1000"
     >
 
       <div
-        class="grid grid-cols-2 lg:grid-cols-5 gap-8"
+        class="grid
+
+        grid-cols-2
+        md:grid-cols-3
+        lg:grid-cols-5
+
+        gap-8"
       >
 
         <!-- ITEM -->
@@ -456,100 +587,171 @@ OUR STORY SECTION
         <div class="text-center lg:border-r border-[#c8961f]">
 
           <h3
-            class="text-3xl sm:text-4xl
-            font-bold text-[#1E1E1E]"
+            class="counter
+
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+
+            font-bold
+            text-[#1E1E1E]"
+
+            data-target="25"
           >
-            25+
+            0
           </h3>
 
           <p
             class="mt-2
+
             text-[#2B2B2B]
-            text-base"
+
+            text-sm
+            sm:text-base"
           >
             Years
           </p>
 
         </div>
 
+
+
+
+
         <!-- ITEM -->
 
         <div class="text-center lg:border-r border-[#c8961f]">
 
           <h3
-            class="text-3xl sm:text-4xl
-            font-bold text-[#1E1E1E]"
+            class="counter
+
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+
+            font-bold
+            text-[#1E1E1E]"
+
+            data-target="180"
           >
-            180+
+            0
           </h3>
 
           <p
             class="mt-2
+
             text-[#2B2B2B]
-            text-base"
+
+            text-sm
+            sm:text-base"
           >
             Stores
           </p>
 
         </div>
 
+
+
+
+
         <!-- ITEM -->
 
         <div class="text-center lg:border-r border-[#c8961f]">
 
           <h3
-            class="text-3xl sm:text-4xl
-            font-bold text-[#1E1E1E]"
+            class="counter
+
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+
+            font-bold
+            text-[#1E1E1E]"
+
+            data-target="100"
           >
-            100k+
+            0
           </h3>
 
           <p
             class="mt-2
+
             text-[#2B2B2B]
-            text-base"
+
+            text-sm
+            sm:text-base"
           >
             Customers
           </p>
 
         </div>
 
+
+
+
+
         <!-- ITEM -->
 
         <div class="text-center lg:border-r border-[#c8961f]">
 
           <h3
-            class="text-3xl sm:text-4xl
-            font-bold text-[#1E1E1E]"
+            class="counter
+
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+
+            font-bold
+            text-[#1E1E1E]"
+
+            data-target="35"
           >
-            35+
+            0
           </h3>
 
           <p
             class="mt-2
+
             text-[#2B2B2B]
-            text-base"
+
+            text-sm
+            sm:text-base"
           >
             Awards
           </p>
 
         </div>
 
+
+
+
+
         <!-- ITEM -->
 
         <div class="text-center">
 
           <h3
-            class="text-3xl sm:text-4xl
-            font-bold text-[#1E1E1E]"
+            class="counter
+
+            text-2xl
+            sm:text-3xl
+            lg:text-4xl
+
+            font-bold
+            text-[#1E1E1E]"
+
+            data-target="98"
           >
-            98%
+            0
           </h3>
 
           <p
             class="mt-2
+
             text-[#2B2B2B]
-            text-base"
+
+            text-sm
+            sm:text-base"
           >
             Satisfied
           </p>
@@ -817,6 +1019,7 @@ TEAM SECTION
 
     <div
       class="text-center max-w-3xl mx-auto"
+
       data-aos="fade-up"
       data-aos-duration="1000"
     >
@@ -829,7 +1032,7 @@ TEAM SECTION
 
         <p
           class="text-[#555]
-          text-xl sm:text-2xl
+          text-lg sm:text-xl
           font-medium"
         >
           Our Team
@@ -840,31 +1043,57 @@ TEAM SECTION
       <!-- TITLE -->
 
       <h2
-        class="text-4xl sm:text-5xl
+        class="text-3xl sm:text-4xl lg:text-5xl
+
         font-bold
         leading-tight
+
         text-[#1F1F1F]"
       >
         Meet
+
         <span class="text-[#2E5E3B]">
           Our Team
         </span>
+
       </h2>
 
     </div>
 
+
+
+
+
     <!-- TEAM GRID -->
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+      class="grid
+
+      grid-cols-1
+      sm:grid-cols-2
+      lg:grid-cols-3
+
       gap-8 lg:gap-10
-      mt-16"
+
+      mt-14 lg:mt-16"
     >
 
-      <!-- CARD 1 -->
+      <!-- CARD -->
 
       <div
-        class="group text-center"
+        class="team-card
+        group
+        text-center
+
+        transition-all
+        duration-500
+        ease-out
+
+        hover:-translate-y-4
+        hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)]
+
+        cursor-pointer"
+
         data-aos="fade-up"
         data-aos-duration="1000"
       >
@@ -876,13 +1105,62 @@ TEAM SECTION
 
           bg-[#ECEBE7]
 
-          rounded-[28px]
+          rounded-[24px]
+          sm:rounded-[28px]
+
           overflow-hidden
 
-          h-[420px]
-
-          flex items-end justify-center"
+          h-[320px]
+          sm:h-[380px]
+          lg:h-[420px]"
         >
+
+          <!-- OVERLAY -->
+
+          <div
+            class="absolute inset-0
+
+            bg-gradient-to-t
+            from-black/50
+            via-black/10
+            to-transparent
+
+            opacity-0
+            group-hover:opacity-100
+
+            duration-500
+
+            z-10"
+          ></div>
+
+
+
+
+
+          <!-- SHINE EFFECT -->
+
+          <div
+            class="absolute
+
+            top-0 left-[-120%]
+
+            w-[80%]
+            h-full
+
+            bg-white/20
+
+            skew-x-12
+
+            group-hover:left-[140%]
+
+            duration-1000
+
+            z-20"
+          ></div>
+
+
+
+
 
           <!-- IMAGE -->
 
@@ -891,100 +1169,255 @@ TEAM SECTION
 
             alt="Jenny Alexander"
 
-            class="w-full h-full
-            object-cover object-top
+            loading="lazy"
+            decoding="async"
 
-            group-hover:scale-105
+            class="w-full h-full
+
+            object-cover
+            object-top
+
+            group-hover:scale-110
+            group-hover:rotate-1
+
             duration-700"
           />
+
+
+
+
 
           <!-- SOCIAL ICONS -->
 
           <div
             class="absolute
+
             left-1/2 bottom-6
             -translate-x-1/2
 
-            flex items-center gap-3"
+            flex items-center gap-3
+
+            opacity-0
+            translate-y-10
+
+            group-hover:opacity-100
+            group-hover:translate-y-0
+
+            duration-500
+
+            z-30"
           >
+
+            <!-- FACEBOOK -->
 
             <a
               href="#"
-              class="w-12 h-12
-              rounded-full
 
-              bg-[#D4A437]
-
-              flex items-center justify-center
-
-              text-[#1F1F1F]
-              text-xl
-
-              hover:bg-[#2E5E3B]
-              hover:text-white
-
-              duration-300"
+              class="social-icon"
             >
               <i class="ri-facebook-fill"></i>
             </a>
 
+            <!-- TWITTER -->
+
             <a
               href="#"
-              class="w-12 h-12
-              rounded-full
 
-              bg-[#D4A437]
-
-              flex items-center justify-center
-
-              text-[#1F1F1F]
-              text-xl
-
-              hover:bg-[#2E5E3B]
-              hover:text-white
-
-              duration-300"
+              class="social-icon"
             >
               <i class="ri-twitter-x-fill"></i>
             </a>
 
+            <!-- PINTEREST -->
+
             <a
               href="#"
-              class="w-12 h-12
-              rounded-full
 
-              bg-[#D4A437]
-
-              flex items-center justify-center
-
-              text-[#1F1F1F]
-              text-xl
-
-              hover:bg-[#2E5E3B]
-              hover:text-white
-
-              duration-300"
+              class="social-icon"
             >
               <i class="ri-pinterest-fill"></i>
             </a>
 
+            <!-- INSTAGRAM -->
+
             <a
               href="#"
-              class="w-12 h-12
-              rounded-full
 
-              bg-[#D4A437]
-
-              flex items-center justify-center
-
-              text-[#1F1F1F]
-              text-xl
-
-              hover:bg-[#2E5E3B]
-              hover:text-white
-
-              duration-300"
+              class="social-icon"
             >
+              <i class="ri-instagram-line"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+
+
+
+        <!-- CONTENT -->
+
+        <div class="mt-6">
+
+          <h3
+            class="text-2xl sm:text-3xl
+
+            font-bold
+
+            text-[#222]"
+          >
+            Jenny Alexander
+          </h3>
+
+          <p
+            class="mt-2
+
+            text-[#777]
+
+            text-base sm:text-lg"
+          >
+            [ CEO, Furniture ]
+          </p>
+
+        </div>
+
+      </div>
+
+
+
+
+
+      <!-- CARD 2 -->
+
+      <div
+        class="team-card
+        group
+        text-center
+
+        transition-all
+        duration-500
+        ease-out
+
+        hover:-translate-y-4
+        hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)]
+
+        cursor-pointer"
+
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1000"
+      >
+
+        <div
+          class="relative
+
+          bg-[#ECEBE7]
+
+          rounded-[24px]
+          sm:rounded-[28px]
+
+          overflow-hidden
+
+          h-[320px]
+          sm:h-[380px]
+          lg:h-[420px]"
+        >
+
+          <!-- OVERLAY -->
+
+          <div
+            class="absolute inset-0
+
+            bg-gradient-to-t
+            from-black/50
+            via-black/10
+            to-transparent
+
+            opacity-0
+            group-hover:opacity-100
+
+            duration-500
+
+            z-10"
+          ></div>
+
+          <!-- SHINE -->
+
+          <div
+            class="absolute
+
+            top-0 left-[-120%]
+
+            w-[80%]
+            h-full
+
+            bg-white/20
+
+            skew-x-12
+
+            group-hover:left-[140%]
+
+            duration-1000
+
+            z-20"
+          ></div>
+
+          <!-- IMAGE -->
+
+          <img
+            src="https://i.pinimg.com/736x/2d/82/ef/2d82eff22835cabaaa93888dacb1a0b4.jpg"
+
+            alt="Robert Fox"
+
+            loading="lazy"
+            decoding="async"
+
+            class="w-full h-full
+
+            object-cover
+            object-top
+
+            group-hover:scale-110
+            group-hover:rotate-1
+
+            duration-700"
+          />
+
+          <!-- ICONS -->
+
+          <div
+            class="absolute
+
+            left-1/2 bottom-6
+            -translate-x-1/2
+
+            flex items-center gap-3
+
+            opacity-0
+            translate-y-10
+
+            group-hover:opacity-100
+            group-hover:translate-y-0
+
+            duration-500
+
+            z-30"
+          >
+
+            <a href="#" class="social-icon">
+              <i class="ri-facebook-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="ri-pinterest-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
               <i class="ri-instagram-line"></i>
             </a>
 
@@ -997,67 +1430,8 @@ TEAM SECTION
         <div class="mt-6">
 
           <h3
-            class="text-3xl
-            font-bold
-            text-[#222]"
-          >
-            Jenny Alexander
-          </h3>
-
-          <p
-            class="mt-2
-            text-[#777]
-            text-lg"
-          >
-            [ CEO, Furniture ]
-          </p>
-
-        </div>
-
-      </div>
-
-      <!-- CARD 2 -->
-
-      <div
-        class="group text-center"
-        data-aos="fade-up"
-        data-aos-delay="200"
-        data-aos-duration="1000"
-      >
-
-        <!-- IMAGE BOX -->
-
-        <div
-          class="bg-[#ECEBE7]
-
-          rounded-[28px]
-          overflow-hidden
-
-          h-[420px]"
-        >
-
-          <img
-            src="https://i.pinimg.com/736x/2d/82/ef/2d82eff22835cabaaa93888dacb1a0b4.jpg"
-
-            alt="Robert Fox"
-
-            class="w-full h-full
-            object-cover object-top
-
-            group-hover:scale-105
-            duration-700"
-          />
-
-        </div>
-
-        <!-- CONTENT -->
-
-        <div class="mt-6">
-
-          <h3
-            class="text-3xl
-            font-bold
-            text-[#222]"
+            class="text-2xl sm:text-3xl
+            font-bold text-[#222]"
           >
             Robert Fox
           </h3>
@@ -1065,7 +1439,7 @@ TEAM SECTION
           <p
             class="mt-2
             text-[#777]
-            text-lg"
+            text-base sm:text-lg"
           >
             [ Carpenter ]
           </p>
@@ -1074,37 +1448,144 @@ TEAM SECTION
 
       </div>
 
+
+
+
+
       <!-- CARD 3 -->
 
       <div
-        class="group text-center"
+        class="team-card
+        group
+        text-center
+
+        transition-all
+        duration-500
+        ease-out
+
+        hover:-translate-y-4
+        hover:shadow-[0_25px_60px_rgba(0,0,0,0.12)]
+
+        cursor-pointer"
+
         data-aos="fade-up"
         data-aos-delay="400"
         data-aos-duration="1000"
       >
 
-        <!-- IMAGE BOX -->
-
         <div
-          class="bg-[#ECEBE7]
+          class="relative
 
-          rounded-[28px]
+          bg-[#ECEBE7]
+
+          rounded-[24px]
+          sm:rounded-[28px]
+
           overflow-hidden
 
-          h-[420px]"
+          h-[320px]
+          sm:h-[380px]
+          lg:h-[420px]"
         >
+
+          <!-- OVERLAY -->
+
+          <div
+            class="absolute inset-0
+
+            bg-gradient-to-t
+            from-black/50
+            via-black/10
+            to-transparent
+
+            opacity-0
+            group-hover:opacity-100
+
+            duration-500
+
+            z-10"
+          ></div>
+
+          <!-- SHINE -->
+
+          <div
+            class="absolute
+
+            top-0 left-[-120%]
+
+            w-[80%]
+            h-full
+
+            bg-white/20
+
+            skew-x-12
+
+            group-hover:left-[140%]
+
+            duration-1000
+
+            z-20"
+          ></div>
+
+          <!-- IMAGE -->
 
           <img
             src="https://i1-e.pinimg.com/1200x/6f/29/49/6f29497fd19d6d07881ec197c931e171.jpg"
 
             alt="Theresa Webb"
 
-            class="w-full h-full
-            object-cover object-top
+            loading="lazy"
+            decoding="async"
 
-            group-hover:scale-105
+            class="w-full h-full
+
+            object-cover
+            object-top
+
+            group-hover:scale-110
+            group-hover:rotate-1
+
             duration-700"
           />
+
+          <!-- ICONS -->
+
+          <div
+            class="absolute
+
+            left-1/2 bottom-6
+            -translate-x-1/2
+
+            flex items-center gap-3
+
+            opacity-0
+            translate-y-10
+
+            group-hover:opacity-100
+            group-hover:translate-y-0
+
+            duration-500
+
+            z-30"
+          >
+
+            <a href="#" class="social-icon">
+              <i class="ri-facebook-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="ri-twitter-x-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="ri-pinterest-fill"></i>
+            </a>
+
+            <a href="#" class="social-icon">
+              <i class="ri-instagram-line"></i>
+            </a>
+
+          </div>
 
         </div>
 
@@ -1113,9 +1594,8 @@ TEAM SECTION
         <div class="mt-6">
 
           <h3
-            class="text-3xl
-            font-bold
-            text-[#222]"
+            class="text-2xl sm:text-3xl
+            font-bold text-[#222]"
           >
             Theresa Webb
           </h3>
@@ -1123,7 +1603,7 @@ TEAM SECTION
           <p
             class="mt-2
             text-[#777]
-            text-lg"
+            text-base sm:text-lg"
           >
             [ Carpenter ]
           </p>
@@ -1675,6 +2155,7 @@ BOTTOM BAR
         offset: 100,
       });
     </script>
+    <script src="./js/about.js"></script>
     <script src="./js/shop-details.js"></script>
     <script src="./js/footer.js"></script>
     <script src="./js/header.js"></script>

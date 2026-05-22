@@ -62,3 +62,40 @@ body{
     border-radius: 30px;
     background: #1E3A2F;
   }
+
+
+
+  .social-icon{
+
+  width: 48px;
+  height: 48px;
+
+  border-radius: 9999px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 20px;
+
+  color: white;
+
+  background: rgba(255,255,255,0.18);
+
+  backdrop-filter: blur(12px);
+
+  border: 1px solid rgba(255,255,255,0.25);
+
+  transition: all 0.3s ease;
+
+}
+
+.social-icon:hover{
+
+  background: #D4A437;
+
+  color: #1F1F1F;
+
+  transform: translateY(-4px);
+
+}
